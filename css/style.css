@@ -20,30 +20,13 @@ button:hover {
   border-radius: 100%;
 }
 
-.bottom-left {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.github {
+  width: 32px;
+  height: 32px;
+  filter: invert(99%) sepia(0%) saturate(1136%) hue-rotate(222deg) brightness(90%) contrast(91%);
 }
-
-.bottom-right {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.bottom-center {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-}
-
-.twitter:hover {
-  filter: invert(48%) sepia(21%) saturate(6294%) hue-rotate(183deg) brightness(107%) contrast(90%);
-}
-
-.instagram:hover {
-  filter: invert(28%) sepia(94%) saturate(2883%) hue-rotate(323deg) brightness(92%) contrast(90%);
+.github:hover {
+  filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
 }
 
 #social-link div {
@@ -72,203 +55,69 @@ button:hover {
   user-select: none;
 }
 
-#missionStatementContainer {
+.bottom-left {
   position: absolute;
-  right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: right;
-}
-#missionStatementContainer p {
-  width: 50vw;
-  font-size: 48px;
+  left: 0;
+  bottom: 0;
 }
 
-#shopNowButton {
-  background-color: black;
-  color: white;
-  border-radius: 30px;
-  font-size: 18px;
-  width: 120px;
-  height: 50px;
-  margin-top: 25px;
+.bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-#homepageSocialLinkContainer {
-  margin: 0px 50px 50px 0px;
-}
-
-@media only screen and (max-width: 665px) {
-  #missionStatementContainer {
-    right: 0 !important;
-    text-align: center !important;
-  }
-  #missionStatementContainer p {
-    width: 100vw !important;
-    font-size: 36px;
-  }
-
-  #homepageSocialLinkContainer {
-    grid-template-rows: auto;
-    grid-template-columns: 32px 32px;
-    column-gap: 5px;
-    margin: 0px 0px 20px 0px;
-    transform: translateX(-50%);
-    justify-content: center;
-    left: 50%;
-    bottom: 0;
-  }
-}
-#aboutWrapper {
-  max-width: 100vw;
-  margin-top: 50px;
-  padding: 50px;
-  display: grid;
-  grid-template-rows: min-content min-content min-content min-content;
-  grid-template-columns: auto auto;
-  row-gap: 20px;
-  column-gap: 50px;
-}
-#aboutWrapper img {
-  object-fit: contain;
-  object-position: 0%;
-  max-height: 400px;
-  max-width: calc(100vw - 117px);
-  grid-row-start: 1;
-  grid-row-end: row2-end;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#aboutWrapper p {
-  grid-column: 2;
-  grid-row: 2;
-  color: black;
-}
-
-#contactInfo {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-}
-#contactInfo div {
-  display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-}
-#contactInfo p {
-  overflow-wrap: anywhere;
-}
-#contactInfo img {
-  box-shadow: none;
-  transition: 0.3s filter;
-}
-#contactInfo img:hover {
-  filter: invert(33%) sepia(36%) saturate(2995%) hue-rotate(212deg) brightness(102%) contrast(99%);
-}
-
-#aboutPageSocialLinkContainer {
-  margin-left: 50px;
-  margin-bottom: 50px;
+.bottom-center {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 900px) {
-  #aboutWrapper {
-    grid-template-columns: 100%;
-    grid-template-rows: min-content min-content auto;
-    column-gap: 0px;
-    margin: 100px 0px 25px 0px;
+  #promo {
+    grid-template-columns: 100% !important;
   }
-  #aboutWrapper img {
-    grid-row-start: 1;
-    grid-row-end: 1;
+  #promo #promoHeaderWrapper {
+    text-align: center;
   }
-  #aboutWrapper h2 {
-    margin-top: 20px;
-    grid-row: 2;
-  }
-  #aboutWrapper p {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  #contactInfo {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  #aboutPageSocialLinkContainer {
-    grid-template-rows: auto;
-    grid-template-columns: 32px 32px;
-    column-gap: 5px;
-    margin: 0px 0px 20px 0px;
-    transform: translateX(-50%);
-    justify-content: center;
-    left: 50%;
-    bottom: 0;
-  }
-  #aboutPageSocialLinkContainer div p {
+  #promo #downloadButton {
     display: none;
   }
-}
-#cartNavBar {
-  grid-template-columns: 125px 175px 125px auto;
-}
-
-#shopHeader {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: -10px;
-  transition: 0.5s margin;
-}
-
-#cartContainer {
-  display: flex;
-  flex-direction: row;
-  column-gap: 15px;
-  transition: none;
-  position: absolute;
-  right: 0;
-  margin: 5px 5px 0px 0px;
-}
-#cartContainer img {
-  transition: 0.3s filter;
-}
-#cartContainer img:hover {
-  filter: invert(33%) sepia(36%) saturate(2995%) hue-rotate(212deg) brightness(102%) contrast(99%);
-}
-
-#itemsContainer {
-  height: 100%;
-  width: 100%;
-}
-
-@media only screen and (max-width: 750px) {
-  #shopHeader {
-    margin-top: 30px;
-  }
-}
-@media only screen and (max-width: 665px) {
-  #cartContainer {
-    margin: 10px 25px 0px 0px;
+  #promo #releasesMobileButton {
+    display: inline !important;
   }
 
-  #shopHeader {
-    margin-top: -5px;
-  }
-}
-@media only screen and (max-width: 665px) {
-  .nav-bar .nav-bar-links {
+  #promoImg {
     position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;
+    animation: drop-opaque 1.5s !important;
+  }
+
+  #githubSocial {
+    margin: 0 !important;
+    position: absolute;
+  }
+
+  .social-link-container {
+    width: 32px;
+  }
+
+  .bottom-left {
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 60px;
   }
-  .nav-bar .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    text-align: center;
+}
+@keyframes drop-opaque {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 0.15;
+    transform: translateY(0px);
   }
 }
 * {
@@ -282,66 +131,101 @@ html {
 
 body {
   height: 100%;
-  font-family: "Poppins", sans-serif;
-  background-color: #e8e8e8;
+  font-family: "Open Sans", sans-serif;
+  background-color: #16191a;
 }
 
-#mainPageWrapper {
-  min-height: 100%;
-  height: max-content;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.nav-bar {
-  float: left;
-  margin: 25px 50px 0px 50px;
-}
-.nav-bar .nav-bar-links {
-  display: flex;
-  flex-direction: row;
-  column-gap: 50px;
-}
-.nav-bar .nav-bar-links li {
-  text-align: center;
-  list-style-type: none;
-}
-.nav-bar a {
-  text-decoration: none;
-  color: black;
-  transition: 0.5s all;
-}
-.nav-bar a:hover {
-  color: #3e66fb;
-}
-.nav-bar .logo {
-  position: absolute;
-  right: 0;
-  top: 0;
-  user-select: none;
-  min-width: 190px;
-  margin: 20px 20px 0px 0px;
-}
-.nav-bar .logo h1 {
-  display: inline;
-  cursor: pointer;
+#logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: #9a9a9a;
   font-size: 32px;
-}
-.nav-bar .logo h1:hover {
-  color: #3e66fb;
-}
-
-.cart {
-  margin-right: 10px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  user-select: none;
 }
 
-/*
- * Grid - Parent
- * 
- * Container (#(id) div) <- display: grid; grid-template-rows: 50px 50px;
- *  - .social-link (instagram)
- *  - .social-link (twitter)
-*/
+#promo {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 59.2vw auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#promoHeaderWrapper {
+  width: 80%;
+  height: min-content;
+  margin-top: 15vh;
+  align-self: start;
+  justify-self: center;
+}
+#promoHeaderWrapper #promoHeader {
+  font-weight: bold;
+  color: #b7b7b7;
+  font-size: 72px;
+}
+#promoHeaderWrapper #downloadButton,
+#promoHeaderWrapper #releasesMobileButton {
+  background-color: #00ccd9;
+  height: 45px;
+  margin: 25px 0px 0px 5px;
+  padding: 0px 15px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+#promoHeaderWrapper #downloadButton:hover,
+#promoHeaderWrapper #releasesMobileButton:hover {
+  background-color: #00bdca !important;
+}
+#promoHeaderWrapper #releasesMobileButton {
+  display: none;
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  margin-top: 100px;
+}
+#promoHeaderWrapper #promoPlatforms {
+  margin: 15px 0px 0px 5px;
+  font-family: "Raleway", sans-serif;
+  color: #676767;
+  font-weight: 800;
+}
+
+#promoImg {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  margin: 0px 15px 15px 0px;
+  justify-self: end;
+  align-self: end;
+  height: 85vh;
+  width: 100%;
+  animation: drop 1.5s ease;
+}
+#promoImg img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#githubSocial {
+  margin-left: 6.5vw;
+  transition: 0.5s filter ease;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

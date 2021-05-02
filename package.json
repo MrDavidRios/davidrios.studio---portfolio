@@ -1,14 +1,14 @@
 {
-  "name": "competition-website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "compile:sass": "sass sass/style.scss css/style.css --watch"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.32.8"
-  }
+	"name": "davidrios-portfolio",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "sass sass/style.scss css/style.css --watch"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.32.8"
+	}
 }
