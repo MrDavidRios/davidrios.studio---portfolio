@@ -31,7 +31,7 @@ function initDownloadButton() {
 }
 
 downloadButton.addEventListener('click', () => {
-	window.open(link, '_blank');
+	window.open(link);
 });
 
 document.getElementById('mobileReleasesButton').addEventListener('click', () => {
