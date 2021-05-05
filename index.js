@@ -30,11 +30,11 @@ function initDownloadButton() {
 	}
 }
 
-downloadButton.addEventListener('click', () => {
+downloadButton?.addEventListener('click', () => {
 	window.open(link);
 });
 
-document.getElementById('mobileReleasesButton').addEventListener('click', () => {
+document.getElementById('mobileReleasesButton')?.addEventListener('click', () => {
 	window.open('https://github.com/MrDavidRios/remindr_releases/releases', '_blank');
 });
 
