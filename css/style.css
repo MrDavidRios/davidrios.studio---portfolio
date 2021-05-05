@@ -80,6 +80,9 @@ button:hover {
   #promo #promoHeaderWrapper {
     text-align: center;
   }
+  #promo #promoHeaderWrapper #promoHeader {
+    font-size: 12vw !important;
+  }
   #promo #downloadButton {
     display: none;
   }
@@ -108,6 +111,14 @@ button:hover {
   .bottom-left {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media only screen and (max-height: 600px) {
+  .social-link-container {
+    margin: 0 !important;
+    position: fixed;
+    top: 20px;
+    left: calc(100% - 35px);
   }
 }
 @keyframes drop-opaque {
