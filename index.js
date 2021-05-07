@@ -1,29 +1,31 @@
-const LATEST_VERSION = '1.4.6';
+let latestVersion = '1.4.6';
 
 const downloadButton = document.getElementById('downloadButton');
 
 let link = 'https://github.com/MrDavidRios/remindr_releases/releases';
 
-initDownloadButton();
+getLatestVersion().finally(initDownloadButton);
 
 function initDownloadButton() {
 	const os = getOS();
 
+	console.log(os);
+
 	switch (os) {
 		case 'Windows':
-			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${LATEST_VERSION}/Remindr-Setup-${LATEST_VERSION}.exe`;
+			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-Setup-${latestVersion}.exe`;
 
-			downloadButton.innerText = `Download for Windows (v${LATEST_VERSION})`;
+			downloadButton.innerText = `Download for Windows (v${latestVersion})`;
 			break;
 		case 'Linux':
-			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${LATEST_VERSION}/Remindr-${LATEST_VERSION}.dmg`;
+			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}.dmg`;
 
-			downloadButton.innerText = `Download for Linux (v${LATEST_VERSION})`;
+			downloadButton.innerText = `Download for Linux (v${latestVersion})`;
 			break;
 		case 'Mac OS':
-			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${LATEST_VERSION}/Remindr-${LATEST_VERSION}-mac.zip`;
+			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}-mac.zip`;
 
-			downloadButton.innerText = `Download for Mac OS (v${LATEST_VERSION})`;
+			downloadButton.innerText = `Download for Mac OS (v${latestVersion})`;
 			break;
 		default:
 			break;
@@ -59,4 +61,17 @@ function getOS() {
 	}
 
 	return os;
+}
+
+async function getLatestVersion() {
+	let url = 'https://api.github.com/repos/mrdavidrios/remindr_releases/tags';
+	let obj = null;
+
+	try {
+		obj = await (await fetch(url)).json();
+	} catch (e) {
+		console.log('error');
+	}
+
+	latestVersion = obj[0].name.substring(1) ?? latestVersion;
 }
