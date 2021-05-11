@@ -18,12 +18,12 @@ function initDownloadButton() {
 			downloadButton.innerText = `Download for Windows (v${latestVersion})`;
 			break;
 		case 'Linux':
-			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}.dmg`;
+			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}.AppImage`;
 
 			downloadButton.innerText = `Download for Linux (v${latestVersion})`;
 			break;
 		case 'Mac OS':
-			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}-mac.zip`;
+			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}.dmg`;
 
 			downloadButton.innerText = `Download for Mac OS (v${latestVersion})`;
 			break;
