@@ -18,7 +18,7 @@ function initDownloadButton() {
 			downloadButton.innerText = `Download for Windows (v${latestVersion})`;
 			break;
 		case 'Linux':
-			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}_amd64.deb`;
+			link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr_${latestVersion}_amd64.deb`;
 
 			downloadButton.innerText = `Download for Linux (Debian) (v${latestVersion})`;
 			break;
