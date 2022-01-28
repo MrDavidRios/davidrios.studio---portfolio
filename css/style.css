@@ -1,246 +1,242 @@
 button {
-	border: none;
-	outline: none;
-	cursor: pointer;
-	font-family: 'Poppins', sans-serif;
-	transition: 0.5s background-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s background-color;
 }
 button:hover {
-	background-color: #3e66fb !important;
+  background-color: #3e66fb !important;
 }
 
 .badge {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #000000;
-	color: white;
-	width: 25px;
-	height: 25px;
-	border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
 }
 
 .github {
-	width: 32px;
-	height: 32px;
-	filter: invert(99%) sepia(0%) saturate(1136%) hue-rotate(222deg) brightness(90%) contrast(91%);
+  width: 32px;
+  height: 32px;
+  filter: invert(99%) sepia(0%) saturate(1136%) hue-rotate(222deg) brightness(90%) contrast(91%);
 }
 .github:hover {
-	filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
+  filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
 }
 
 #social-link div {
-	display: grid;
-	grid-template-rows: 50px 50px;
+  display: grid;
+  grid-template-rows: 50px 50px;
 }
 
 .social-link-container {
-	display: grid;
-	grid-template-rows: 32px 32px;
-	row-gap: 5px;
-	margin-bottom: 10px;
+  display: grid;
+  grid-template-rows: 32px 32px;
+  row-gap: 5px;
+  margin-bottom: 10px;
 }
 .social-link-container div {
-	display: grid;
-	grid-template-columns: 32px auto;
-	column-gap: 5px;
-	align-items: center;
-	transition: 0.3s filter;
+  display: grid;
+  grid-template-columns: 32px auto;
+  column-gap: 5px;
+  align-items: center;
+  transition: 0.3s filter;
 }
 .social-link-container div a {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .social-link-container div a img {
-	user-select: none;
+  user-select: none;
 }
 
 .bottom-left {
-	position: absolute;
-	left: 0;
-	bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .bottom-right {
-	position: absolute;
-	right: 0;
-	bottom: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .bottom-center {
-	position: absolute;
-	left: 50%;
-	bottom: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 900px) {
-	#promo {
-		grid-template-columns: 100% !important;
-	}
-	#promo #promoHeaderWrapper {
-		text-align: center;
-	}
-	#promo #promoHeaderWrapper #promoHeader {
-		font-size: 12vw !important;
-	}
-	#promo #downloadButton {
-		display: none;
-	}
-	#promo #releasesMobileButton {
-		display: inline !important;
-	}
+  #promo {
+    grid-template-columns: 100% !important;
+  }
+  #promo #promoHeaderWrapper {
+    text-align: center;
+  }
+  #promo #promoHeaderWrapper #promoHeader {
+    font-size: 12vw !important;
+  }
+  #promo #downloadButton {
+    display: none;
+  }
+  #promo #releasesMobileButton {
+    display: inline !important;
+  }
 
-	#promoImg {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		z-index: -1;
-		opacity: 0.15;
-		animation: drop-opaque 1.5s !important;
-	}
+  #promoImg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;
+    animation: drop-opaque 1.5s !important;
+  }
 
-	#githubSocial {
-		margin: 0 !important;
-		position: absolute;
-	}
+  #githubSocial {
+    margin: 0 !important;
+    position: absolute;
+  }
 
-	.social-link-container {
-		width: 32px;
-	}
+  .social-link-container {
+    width: 32px;
+  }
 
-	.bottom-left {
-		left: 50%;
-		transform: translateX(-50%);
-	}
-
-	.extra-desc {
-		display: none;
-	}
+  .bottom-left {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media only screen and (max-height: 600px) {
-	.social-link-container {
-		margin: 0 !important;
-		position: fixed;
-		top: 20px;
-		left: calc(100% - 35px);
-	}
+  .social-link-container {
+    margin: 0 !important;
+    position: fixed;
+    top: 20px;
+    left: calc(100% - 35px);
+  }
 }
 @keyframes drop-opaque {
-	0% {
-		opacity: 0;
-		transform: translateY(-80px);
-	}
-	100% {
-		opacity: 0.15;
-		transform: translateY(0px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 0.15;
+    transform: translateY(0px);
+  }
 }
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	background-color: #16191a;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #16191a;
 }
 
 #logo {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
-	color: #9a9a9a;
-	font-size: 32px;
-	position: absolute;
-	top: 12px;
-	left: 12px;
-	user-select: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: #9a9a9a;
+  font-size: 32px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  user-select: none;
 }
 
 #promo {
-	overflow: hidden;
-	display: grid;
-	grid-template-columns: 59.2vw auto;
-	align-items: center;
-	width: 100%;
-	height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 59.2vw auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #promoHeaderWrapper {
-	width: 80%;
-	height: min-content;
-	margin-top: 15vh;
-	align-self: start;
-	justify-self: center;
+  width: 80%;
+  height: min-content;
+  margin-top: 15vh;
+  align-self: start;
+  justify-self: center;
 }
 #promoHeaderWrapper #promoHeader {
-	font-weight: bold;
-	color: #b7b7b7;
-	font-size: 72px;
+  font-weight: bold;
+  color: #b7b7b7;
+  font-size: 72px;
 }
 #promoHeaderWrapper #downloadButton,
 #promoHeaderWrapper #releasesMobileButton {
-	background-color: #00ccd9;
-	height: 45px;
-	margin: 25px 0px 0px 5px;
-	padding: 0px 15px;
-	border-radius: 7px;
-	font-size: 20px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+  background-color: #00ccd9;
+  height: 45px;
+  margin: 25px 0px 0px 5px;
+  padding: 0px 15px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 #promoHeaderWrapper #downloadButton:hover,
 #promoHeaderWrapper #releasesMobileButton:hover {
-	background-color: #00bdca !important;
+  background-color: #00bdca !important;
 }
 #promoHeaderWrapper #releasesMobileButton {
-	display: none;
-	width: 200px;
-	height: 50px;
-	font-size: 22px;
-	margin-top: 100px;
+  display: none;
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  margin-top: 100px;
 }
 #promoHeaderWrapper p {
-	margin: 15px 0px 0px 5px;
-	font-family: 'Raleway', sans-serif;
-	color: #676767;
-	font-weight: 800;
+  margin: 15px 0px 0px 5px;
+  font-family: "Raleway", sans-serif;
+  color: #676767;
+  font-weight: 800;
 }
 
 #promoImg {
-	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-	margin: 0px calc(5%) 15px 0px;
-	justify-self: end;
-	align-self: center;
-	height: 90vh;
-	width: 100%;
-	animation: drop 1.5s ease;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  margin: 0px calc(5%) 15px 0px;
+  justify-self: end;
+  align-self: end;
+  height: 85vh;
+  width: 100%;
+  animation: drop 1.5s ease;
 }
 #promoImg img {
-	border-radius: 15px;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #githubSocial {
-	margin-left: 6.5vw;
-	transition: 0.5s filter ease;
+  margin-left: 6.5vw;
+  transition: 0.5s filter ease;
 }
 
 @keyframes drop {
-	0% {
-		opacity: 0;
-		transform: translateY(-80px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
