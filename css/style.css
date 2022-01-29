@@ -211,7 +211,7 @@ body {
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
   margin: 0px calc(5%) 15px 0px;
   justify-self: end;
-  align-self: end;
+  align-self: center;
   height: 90vh;
   width: 100%;
   animation: drop 1.5s ease;
