@@ -99,6 +99,7 @@ button:hover {
   width: 175px;
   height: 40px;
   margin: 4px, 0, 0, 4px;
+  margin-top: 20px;
   background-color: #00b2ff;
   font-family: "Raleway", sans-serif;
   font-size: 17px;
@@ -153,6 +154,7 @@ button:hover {
 }
 #socialMedia a {
   width: 32px;
+  text-align: left;
 }
 
 .social-icon {
@@ -283,6 +285,43 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  #landingPage #nameSection {
+    margin-left: 0;
+    padding: 0 25px 0 25px;
+    text-align: center;
+  }
+  #landingPage #nameSection button {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #landingPage #socialMedia {
+    right: auto !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #projectsPage {
+    padding: 0 25px 0 25px;
+  }
+  #projectsPage .project-showcase:first-of-type {
+    margin-top: 50px;
+  }
+
+  .section-title {
+    padding: 25px 0 0 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  #aboutPage #about {
+    padding: 30px 50px 0 50px;
+    margin: 0;
+    text-align: center;
+  }
+  #aboutPage #nameAndYear {
+    padding-bottom: 10px;
+  }
 }
 @media only screen and (max-height: 600px) {
   .social-link-container {
@@ -327,6 +366,7 @@ body {
   top: 12px;
   left: 12px;
   user-select: none;
+  cursor: pointer;
 }
 
 #promo {
