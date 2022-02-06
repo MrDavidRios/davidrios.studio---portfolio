@@ -323,6 +323,13 @@ button:hover {
   #projectsPage .project-showcase:first-of-type {
     margin-top: 50px;
   }
+  #projectsPage .project-showcase .frosted-glass {
+    padding: 0;
+    text-align: center;
+  }
+  #projectsPage .project-showcase .frosted-glass .project-showcase-description {
+    padding: 0 15px 0 15px;
+  }
 
   .section-title {
     padding: 25px 0 0 0 !important;
