@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 button {
   border: none;
   outline: none;
@@ -73,6 +74,182 @@ button:hover {
   bottom: 0;
 }
 
+#landingPage {
+  height: 100vh;
+  background-color: #242f38;
+}
+
+#nameSection {
+  text-align: left;
+  margin-left: 15%;
+  position: absolute;
+  top: 30%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 15px;
+}
+#nameSection h1 {
+  font-size: 60px;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+#nameSection h3 {
+  margin-left: 4px;
+}
+#nameSection button {
+  width: 175px;
+  height: 40px;
+  margin: 4px, 0, 0, 4px;
+  background-color: #00b2ff;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  transition: 1s all;
+  animation: buttonPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 0 #000;
+  transform: translate3d(0, 0, 0);
+}
+#nameSection button:hover {
+  background-color: #0081b8 !important;
+}
+
+@keyframes buttonPulse {
+  0%, 100% {
+    width: 175px;
+    height: 40px;
+  }
+  50% {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+#navBar {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  column-gap: 20px;
+  width: 175px;
+}
+#navBar span {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+#navBar span:hover {
+  color: #0081b8 !important;
+}
+
+#socialMedia {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 25px;
+}
+#socialMedia #githubSocial {
+  margin-left: 0;
+}
+#socialMedia a {
+  width: 32px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  filter: invert(99%) sepia(0%) saturate(1136%) hue-rotate(222deg) brightness(90%) contrast(91%);
+  transition: 0.5s;
+}
+.social-icon:hover {
+  filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
+}
+
+#projectsPage {
+  padding-bottom: 100px;
+}
+#projectsPage h1 {
+  text-align: center;
+  padding-left: 0;
+}
+
+.project-showcase {
+  margin: 0 auto;
+  width: 60vw;
+  max-width: 1000px;
+  height: 66vh;
+  margin-top: 100px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 11px 13px 15px 5px #000000;
+  cursor: pointer;
+  transition: 0.5s box-shadow ease-in-out;
+}
+.project-showcase img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-showcase:hover {
+  box-shadow: 5px 8px 15px 5px #000000;
+}
+
+.frosted-glass {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  bottom: 0;
+  width: 60vw;
+  max-width: 1000px;
+  height: 66vh;
+  transition: 0.5s opacity ease-in-out;
+  font-family: "Reem Kufi", sans-serif !important;
+  color: black;
+  padding: 25px 0 0 25px;
+}
+.frosted-glass:hover {
+  opacity: 0;
+}
+.frosted-glass h2 {
+  margin-top: 25px;
+}
+.frosted-glass h2:after {
+  /* This value is the OPPOSITE color of our background */
+  color: aqua;
+  mix-blend-mode: difference;
+}
+.frosted-glass .project-showcase-description {
+  margin-top: 25px;
+  padding-right: 25px;
+}
+
+#aboutPage {
+  position: relative;
+  height: 75vh;
+  background-color: #222324;
+}
+#aboutPage #about {
+  margin: 50px 0 0 60px;
+}
+#aboutPage #socialMedia {
+  position: static;
+  margin: auto;
+  width: 160px;
+}
+#aboutPage #email {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  width: min-content;
+  column-gap: 10px;
+}
+#aboutPage #email img {
+  margin-top: 7px;
+  width: 32px;
+  height: 32px;
+}
+
 @media only screen and (max-width: 900px) {
   #promo {
     grid-template-columns: 100% !important;
@@ -136,12 +313,12 @@ button:hover {
   padding: 0;
 }
 
-html {
+html,
+body {
   height: 100%;
 }
 
 body {
-  height: 100%;
   font-family: "Open Sans", sans-serif;
   background-color: #16191a;
 }
@@ -226,6 +403,32 @@ body {
 #githubSocial {
   margin-left: 6.5vw;
   transition: 0.5s filter ease;
+}
+
+.accent {
+  color: #00b2ff;
+}
+
+.section-title {
+  padding: 50px 0 0 60px;
+  font-size: 60px;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+footer {
+  height: min-content;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+}
+footer #nameAndYear {
+  height: 30px;
 }
 
 @keyframes drop {

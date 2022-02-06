@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Remindr is an elegant and simple desktop to-do app with minute-precise reminders. Available on Windows, MacOS, and Linux. Download today!">
+    <meta name="description" content="Game Developer/Front-End Developer. Check out Remindr!">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
@@ -22,28 +21,122 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Remindr - Focus on what's important.</title>
+    <title>David Rios — Game, Front-End Developer</title>
 
 </head>
-<h3 id="logo">DR</h3>
-<section id="promo">
-    <div id="promoHeaderWrapper">
-        <h1 id="promoHeader">Hassle-free reminders.</h1>
-        <p class="extra-desc">Simple, effective, and elegant.</p>
-        <button id="downloadButton">Download</button>
-        <button id="releasesMobileButton">Releases</button>
-        <p id="promoPlatforms">Available on Windows, MacOS, and Linux.</p>
-    </div>
-    <div id="promoImg">
-        <img src="./img/remindrdashboard.png" alt="Remindr - Dashboard" draggable="false" />
-    </div>
-</section>
-<section class="social-link-container bottom-left">
-    <a href="https://github.com/MrDavidRios/remindr_releases/releases" target="_blank"><img src="icons/github.svg"
-            id="githubSocial" class="github" alt="GitHub - Remindr" draggable="false" /></a>
-</section>
-</body>
 
-<script src="./index.js"></script>
+<body>
+    <section id="landingPage">
+        <h3 id="logo" onclick="location.href='/index.html'">DR</h3>
+        <div id="navBar">
+            <p><span
+                    onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})">Projects</span>
+            </p>
+            <p><span
+                    onclick="document.getElementById('aboutPage').scrollIntoView({behavior: 'smooth'})">About/Contact</span>
+            </p>
+        </div>
+        <div id="nameSection">
+            <h1>David Rios</h1>
+            <h3>Game Progammer/Front-End Developer/College Student</h3>
+            <button onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})">See
+                more!</button>
+        </div>
+        <div id="socialMedia">
+            <a href="https://davidrios.itch.io" target="_blank"><img src="icons/gamepad.svg" id="itchioSocial"
+                    class="social-icon" alt="Itch.io" draggable="false" /></a>
+            <a href="https://github.com/MrDavidRios/" target="_blank"><img src="icons/github.svg" id="githubSocial"
+                    class="social-icon" alt="GitHub" draggable="false" /></a>
+            <a href="https://www.linkedin.com/in/david-rios-b5174a1a8/" target="_blank"><img src="icons/linkedin.svg"
+                    id="linkedinSocial" class="social-icon" alt="LinkedIn" draggable="false" /></a>
+        </div>
+    </section>
+    <section id="projectsPage">
+        <h1 class="section-title">Featured Projects</h1>
+        <div class="project-showcase">
+            <a href="http://davidrios.studio/remindr.html" target="_blank"> <img src="./img/remindrsamplescreenshot.png"
+                    alt="Remindr" draggable="false" />
+                <div class="frosted-glass">
+                    <h2>Remindr</h2>
+
+                    <p class="project-showcase-platforms">
+                        Windows, MacOS, Linux
+                    </p>
+
+                    <p class="project-showcase-description">
+                        Remindr is an elegant and simple desktop to-do app with minute-precise reminders. In development
+                        since 2020.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="project-showcase">
+            <a href="http://davidrios.itch.io/pivotpong" target="_blank"> <img src="./img/pivotpongsamplescreenshot.png"
+                    alt="Pivot Pong" draggable="false" />
+                <div class="frosted-glass">
+                    <h2>Pivot Pong</h2>
+
+                    <p class="project-showcase-platforms">
+                        Windows
+                    </p>
+
+                    <p class="project-showcase-description">
+                        Pivot Pong is a ping pong game that puts a fresh spin on a classic game. In Pivot Pong, you can
+                        rotate your paddle, giving you the ability to change the angle of and spike the ball, making
+                        your next move unpredictable!
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="project-showcase">
+            <a href="http://davidrios.itch.io/village-builder-demo" target="_blank"> <img
+                    src="./img/villagebuildersamplescreenshot.png" alt="Village Builder" draggable="false" />
+                <div class="frosted-glass">
+                    <h2>Village Builder</h2>
+
+                    <p class="project-showcase-platforms">
+                        Windows
+                    </p>
+
+                    <p class="project-showcase-description">
+                        Experimental project: primarily for learning purposes. Made with rudimentary models and UI.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+    </section>
+    <section id="aboutPage">
+        <h1 class="section-title">About Me</h1>
+        <div id="about">
+            <p>
+                I’m David Rios, a college student who likes to play around in <span class="accent">VSCode</span> and
+                <span class="accent">Unity</span>.
+            </p>
+            <br>
+            <p>
+                I enjoy finding elegant solutions to complex problems, and creating intuitive designs to make simple
+                things more exciting.
+            </p>
+        </div>
+        <footer>
+            <div id="socialMedia">
+                <a href="https://davidrios.itch.io" target="_blank"><img src="icons/gamepad.svg" id="itchioSocial"
+                        class="social-icon" alt="Itch.io" draggable="false" /></a>
+                <a href="https://github.com/MrDavidRios/" target="_blank"><img src="icons/github.svg" id="githubSocial"
+                        class="social-icon" alt="GitHub" draggable="false" /></a>
+                <a href="https://www.linkedin.com/in/david-rios-b5174a1a8/" target="_blank"><img
+                        src="icons/linkedin.svg" id="linkedinSocial" class="social-icon" alt="LinkedIn"
+                        draggable="false" /></a>
+            </div>
+            <div id="email">
+                <a href="mailto:mr.daverios@gmail.com" target="_blank"><img src="icons/email.svg" id="emailIcon"
+                        class="social-icon" alt="Email" draggable="false" /></a>
+                <p>mr.daverios@gmail.com</p>
+            </div>
+            <p id="nameAndYear">David Rios — 2022</p>
+        </footer>
+    </section>
+</body>
 
 </html>
