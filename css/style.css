@@ -302,6 +302,10 @@ button:hover {
     transform: translateX(-50%);
   }
 
+  #landingPage {
+    display: flex;
+    justify-content: center;
+  }
   #landingPage #nameSection {
     margin-left: 0;
     padding: 0 25px 0 25px;
