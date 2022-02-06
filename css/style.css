@@ -222,29 +222,44 @@ button:hover {
 }
 
 #aboutPage {
-  position: relative;
   height: 75vh;
+  margin-top: 50px;
   background-color: #222324;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
 }
 #aboutPage #about {
   margin: 50px 0 0 60px;
 }
-#aboutPage #socialMedia {
+#aboutPage footer {
+  height: min-content;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+}
+#aboutPage footer #socialMedia {
   position: static;
   margin: auto;
   width: 160px;
 }
-#aboutPage #email {
+#aboutPage footer #email {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
   width: min-content;
   column-gap: 10px;
 }
-#aboutPage #email img {
+#aboutPage footer #email img {
   margin-top: 7px;
   width: 32px;
   height: 32px;
+}
+#aboutPage footer #nameAndYear {
+  height: 30px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -315,6 +330,9 @@ button:hover {
     text-align: center;
   }
 
+  #aboutPage {
+    height: 100vh;
+  }
   #aboutPage #about {
     padding: 30px 50px 0 50px;
     margin: 0;
@@ -449,22 +467,6 @@ body {
   padding: 50px 0 0 60px;
   font-size: 60px;
   font-family: "Reem Kufi", sans-serif !important;
-}
-
-footer {
-  height: min-content;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  row-gap: 10px;
-  justify-content: center;
-  align-items: end;
-  text-align: center;
-}
-footer #nameAndYear {
-  height: 30px;
 }
 
 @keyframes drop {
