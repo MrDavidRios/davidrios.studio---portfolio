@@ -104,7 +104,6 @@ button:hover {
   font-family: "Raleway", sans-serif;
   font-size: 17px;
   transition: 1s all;
-  animation: buttonPulse 2s ease-in-out infinite;
   box-shadow: 0 0 0 #000;
   transform: translate3d(0, 0, 0);
 }
@@ -112,17 +111,6 @@ button:hover {
   background-color: #0081b8 !important;
 }
 
-@keyframes buttonPulse {
-  0%, 100% {
-    width: 175px;
-    height: 40px;
-  }
-  50% {
-    width: 180px;
-    height: 45px;
-    font-size: 18px;
-  }
-}
 #navBar {
   display: grid;
   grid-template-columns: auto auto;
@@ -165,6 +153,13 @@ button:hover {
 }
 .social-icon:hover {
   filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
+}
+
+.project-showcase-description-bulletlist {
+  margin-left: 20px;
+}
+.project-showcase-description-bulletlist .sublist {
+  margin-left: 20px;
 }
 
 #projectsPage {
@@ -227,9 +222,13 @@ button:hover {
   background-color: #222324;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
+  text-align: center;
 }
 #aboutPage #about {
-  margin: 50px 0 0 60px;
+  padding-top: 50px;
+  margin: auto;
+  width: 50%;
+  font-size: 17px;
 }
 #aboutPage footer {
   height: min-content;
@@ -334,6 +333,9 @@ button:hover {
   #projectsPage .project-showcase .frosted-glass .project-showcase-description {
     padding: 0 15px 0 15px;
   }
+  #projectsPage .project-showcase .frosted-glass .project-showcase-description-bulletlist {
+    display: none;
+  }
 
   .section-title {
     padding: 25px 0 0 0 !important;
@@ -346,13 +348,24 @@ button:hover {
   }
   #aboutPage #about {
     padding: 30px 50px 0 50px;
-    margin: 0;
-    text-align: center;
+    margin: auto;
   }
   #aboutPage #nameAndYear {
     padding-bottom: 10px;
   }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block !important;
+  }
 }
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-height: 600px) {
   .social-link-container {
     margin: 0 !important;
@@ -475,7 +488,7 @@ body {
 }
 
 .section-title {
-  padding: 50px 0 0 60px;
+  padding-top: 50px;
   font-size: 60px;
   font-family: "Reem Kufi", sans-serif !important;
 }
@@ -489,6 +502,21 @@ body {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2f2f2f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c5c5c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7e7e7e;
 }
 
 /*# sourceMappingURL=style.css.map */

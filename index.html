@@ -27,36 +27,38 @@
 
 <body>
     <section id="landingPage">
-        <h3 id="logo" onclick="location.href='/index.html'">DR</h3>
+        <h3 id="logo" onclick="location.href='/index.html'" title="David Rios">DR</h3>
         <div id="navBar">
-            <p><span
-                    onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})">Projects</span>
+            <p><span onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
+                    tabindex="0">Projects</span>
             </p>
-            <p><span
-                    onclick="document.getElementById('aboutPage').scrollIntoView({behavior: 'smooth'})">About/Contact</span>
+            <p><span onclick="document.getElementById('aboutPage').scrollIntoView({behavior: 'smooth'})"
+                    tabindex="0">About/Contact</span>
             </p>
         </div>
         <div id="nameSection">
             <h1>David Rios</h1>
             <h3>Game Progammer<span class="accent">/</span>Front-End Developer<span class="accent">/</span>College
                 Student</h3>
-            <button onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})">See
+            <button onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
+                tabindex="0">See
                 more!</button>
         </div>
         <div id="socialMedia">
             <a href="https://davidrios.itch.io" target="_blank"><img src="icons/gamepad.svg" id="itchioSocial"
-                    class="social-icon" alt="Itch.io" draggable="false" /></a>
+                    class="social-icon" alt="Link to my itch.io page" title="My itch.io page" draggable="false" /></a>
             <a href="https://github.com/MrDavidRios/" target="_blank"><img src="icons/github.svg" id="githubSocial"
-                    class="social-icon" alt="GitHub" draggable="false" /></a>
+                    class="social-icon" alt="Link to my GitHub page" title="My GitHub page" draggable="false" /></a>
             <a href="https://www.linkedin.com/in/david-rios-b5174a1a8/" target="_blank"><img src="icons/linkedin.svg"
-                    id="linkedinSocial" class="social-icon" alt="LinkedIn" draggable="false" /></a>
+                    id="linkedinSocial" class="social-icon" alt="Link to my LinkedIn page" title="My LinkedIn page"
+                    draggable="false" /></a>
         </div>
     </section>
     <section id="projectsPage">
         <h1 class="section-title">Featured Projects</h1>
-        <div class="project-showcase">
+        <div class="project-showcase" tabindex="0">
             <a href="http://davidrios.studio/remindr.html" target="_blank"> <img src="./img/remindrsamplescreenshot.png"
-                    alt="Remindr" draggable="false" />
+                    alt="Remindr - Demo Image" draggable="false" />
                 <div class="frosted-glass">
                     <h2>Remindr</h2>
 
@@ -68,12 +70,26 @@
                         Remindr is an elegant and simple desktop to-do app with minute-precise reminders. In development
                         since 2020.
                     </p>
+
+                    <p class="project-showcase-description desktop">Made with:</p>
+                    <p class="project-showcase-description mobile">Made with Electron & Firebase</p>
+                    <ul class="project-showcase-description-bulletlist">
+                        <li>Electron:
+                            <ul class="sublist">
+                                <li>HTML</li>
+                                <li>JavaScript (migrated to TypeScript)</li>
+                                <li>CSS (migrated to SASS)</li>
+                            </ul>
+                        </li>
+                        <li>Firebase</li>
+                    </ul>
+                    <p class="project-showcase-description">Distributed with GitHub CI/CD</p>
                 </div>
             </a>
         </div>
-        <div class="project-showcase">
+        <div class="project-showcase" tabindex="0">
             <a href="http://davidrios.itch.io/pivotpong" target="_blank"> <img src="./img/pivotpongsamplescreenshot.png"
-                    alt="Pivot Pong" draggable="false" />
+                    alt="Pivot Pong - Demo Image" draggable="false" />
                 <div class="frosted-glass">
                     <h2>Pivot Pong</h2>
 
@@ -86,12 +102,15 @@
                         rotate your paddle, giving you the ability to spike the ball, making
                         your next move unpredictable!
                     </p>
+
+                    <p class="project-showcase-description">Made in Unity</p>
                 </div>
             </a>
         </div>
-        <div class="project-showcase">
+        <div class="project-showcase" tabindex="0">
             <a href="http://davidrios.itch.io/village-builder-demo" target="_blank"> <img
-                    src="./img/villagebuildersamplescreenshot.png" alt="Village Builder" draggable="false" />
+                    src="./img/villagebuildersamplescreenshot.png" alt="Village Builder - Demo Image"
+                    draggable="false" />
                 <div class="frosted-glass">
                     <h2>Village Builder</h2>
 
@@ -102,6 +121,8 @@
                     <p class="project-showcase-description">
                         Experimental project: primarily for learning purposes. Made with rudimentary models and UI.
                     </p>
+
+                    <p class="project-showcase-description">Made in Unity</p>
                 </div>
             </a>
         </div>
@@ -116,8 +137,8 @@
             </p>
             <br>
             <p>
-                I enjoy finding elegant solutions to complex problems, and creating intuitive designs to make simple
-                things more exciting.
+                I enjoy creating and experimenting with new software and technologies. I work on software to make minute
+                tasks less time-consuming, learning about how to make more intuitive interfaces in the process.
             </p>
         </div>
         <div>
@@ -125,16 +146,18 @@
         <footer>
             <div id="socialMedia">
                 <a href="https://davidrios.itch.io" target="_blank"><img src="icons/gamepad.svg" id="itchioSocial"
-                        class="social-icon" alt="Itch.io" draggable="false" /></a>
+                        class="social-icon" alt="Link to my itch.io page" title="My itch.io page" draggable="false"
+                        tabindex="0" /></a>
                 <a href="https://github.com/MrDavidRios/" target="_blank"><img src="icons/github.svg" id="githubSocial"
-                        class="social-icon" alt="GitHub" draggable="false" /></a>
+                        class="social-icon" alt="Link to my GitHub page" title="My GitHub page" draggable="false"
+                        tabindex="0" /></a>
                 <a href="https://www.linkedin.com/in/david-rios-b5174a1a8/" target="_blank"><img
-                        src="icons/linkedin.svg" id="linkedinSocial" class="social-icon" alt="LinkedIn"
-                        draggable="false" /></a>
+                        src="icons/linkedin.svg" id="linkedinSocial" class="social-icon" alt="Link to my LinkedIn page"
+                        title="My LinkedIn page" draggable="false" tabindex="0" /></a>
             </div>
             <div id="email">
                 <a href="mailto:mr.daverios@gmail.com" target="_blank"><img src="icons/email.svg" id="emailIcon"
-                        class="social-icon" alt="Email" draggable="false" /></a>
+                        class="social-icon" alt="Email" draggable="false" tabindex="0" /></a>
                 <p>mr.daverios@gmail.com</p>
             </div>
             <p id="nameAndYear">David Rios — 2022</p>
