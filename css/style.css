@@ -76,6 +76,8 @@ button:hover {
 
 #landingPage {
   height: 100vh;
+  min-height: 500px;
+  position: relative;
   background-color: #242f38;
 }
 
@@ -133,6 +135,7 @@ button:hover {
   position: absolute;
   right: 25px;
   bottom: 25px;
+  width: min-content;
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 25px;
@@ -155,10 +158,13 @@ button:hover {
   filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
 }
 
-.project-showcase-description-bulletlist {
+.project-showcase {
+  min-height: 400px;
+}
+.project-showcase .project-showcase-description-bulletlist {
   margin-left: 20px;
 }
-.project-showcase-description-bulletlist .sublist {
+.project-showcase .project-showcase-description-bulletlist .sublist {
   margin-left: 20px;
 }
 
@@ -195,7 +201,7 @@ button:hover {
   bottom: 0;
   width: 60vw;
   max-width: 1000px;
-  height: 66vh;
+  height: 100%;
   transition: 0.5s opacity ease-in-out;
   font-family: "Reem Kufi", sans-serif !important;
   color: #cbcbcb;
@@ -218,6 +224,7 @@ button:hover {
 
 #aboutPage {
   height: 75vh;
+  min-height: 625px;
   margin-top: 50px;
   background-color: #222324;
   display: grid;
@@ -315,9 +322,9 @@ button:hover {
     margin-top: 20px;
   }
   #landingPage #socialMedia {
-    right: auto !important;
-    left: 50%;
-    transform: translateX(-50%);
+    position: initial;
+    margin-top: auto;
+    margin-bottom: 25px;
   }
 
   #projectsPage {
@@ -373,6 +380,18 @@ button:hover {
     top: 20px;
     left: calc(100% - 35px);
   }
+
+  #landingPage #socialMedia {
+    position: initial;
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-height: 600px) and (min-width: 900px) {
+  #landingPage #socialMedia {
+    position: absolute;
+    bottom: 0px;
+  }
 }
 @keyframes drop-opaque {
   0% {
@@ -413,12 +432,14 @@ body {
 }
 
 #promo {
-  overflow: hidden;
   display: grid;
   grid-template-columns: 59.2vw auto;
   align-items: center;
   width: 100%;
   height: 100%;
+}
+#promo #promoPlatforms {
+  padding-bottom: 15px;
 }
 
 #promoHeaderWrapper {
