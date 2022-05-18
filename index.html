@@ -27,7 +27,7 @@
 
 <body>
     <section id="landingPage">
-        <h3 id="logo" onclick="location.href='/index.html'" title="David Rios">DR</h3>
+        <h3 id="logo" onclick="location.href='/index.html'" title="Logo">DR</h3>
         <div id="navBar">
             <p><span onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
                     tabindex="0">Projects</span>
@@ -55,20 +55,23 @@
         </div>
     </section>
     <section id="projectsPage">
-        <h1 class="section-title">Featured Projects</h1>
-        <div class="project-showcase" tabindex="0">
-            <a href="http://davidrios.studio/remindr.html" target="_blank"> <img src="./img/remindrsamplescreenshot.png"
-                    alt="Remindr - Demo Image" draggable="false" />
+        <h1 class="section-title">Recent Projects</h1>
+        <div class="project-showcase" direction="left" tabindex="0">
+            <a href="http://davidrios.studio/remindr.html" target="_blank" draggable="false"> <img
+                    src="./img/remindrsamplescreenshot.png" alt="Remindr - Demo Image" draggable="false" />
+                <div class="project-page-arrow">
+                    <span>Visit Project Page</span>
+                    <img src="./img/right-arrow.svg" draggable="false"></img>
+                </div>
                 <div class="frosted-glass">
                     <h2>Remindr</h2>
 
                     <p class="project-showcase-platforms">
-                        Windows, MacOS, Linux
+                        Windows, MacOS, Linux (2020 - )
                     </p>
 
                     <p class="project-showcase-description">
-                        Remindr is an elegant and simple desktop to-do app with minute-precise reminders. In development
-                        since 2020.
+                        Remindr is an elegant and simple desktop to-do app with minute-precise reminders.
                     </p>
 
                     <p class="project-showcase-description desktop">Made with:</p>
@@ -79,6 +82,7 @@
                                 <li>HTML</li>
                                 <li>JavaScript (TypeScript)</li>
                                 <li>CSS (SASS)</li>
+                                <li>Node.js</li>
                             </ul>
                         </li>
                         <li>Firebase</li>
@@ -87,14 +91,18 @@
                 </div>
             </a>
         </div>
-        <div class="project-showcase" tabindex="0">
-            <a href="http://davidrios.itch.io/pivotpong" target="_blank"> <img src="./img/pivotpongsamplescreenshot.png"
-                    alt="Pivot Pong - Demo Image" draggable="false" />
+        <div class="project-showcase" direction="right" tabindex="0">
+            <a href="http://davidrios.itch.io/pivotpong" target="_blank" draggable="false"> <img
+                    src="./img/pivotpongsamplescreenshot.png" alt="Pivot Pong - Demo Image" draggable="false" />
+                <div class="project-page-arrow">
+                    <span>Visit Project Page</span>
+                    <img src="./img/right-arrow.svg" draggable="false"></img>
+                </div>
                 <div class="frosted-glass">
                     <h2>Pivot Pong</h2>
 
                     <p class="project-showcase-platforms">
-                        Windows
+                        Windows (2019 - 2021)
                     </p>
 
                     <p class="project-showcase-description">
@@ -107,15 +115,19 @@
                 </div>
             </a>
         </div>
-        <div class="project-showcase" tabindex="0">
-            <a href="http://davidrios.itch.io/village-builder-demo" target="_blank"> <img
+        <div class="project-showcase" direction="left" tabindex="0">
+            <a href="http://davidrios.itch.io/village-builder-demo" target="_blank" draggable="false"> <img
                     src="./img/villagebuildersamplescreenshot.png" alt="Village Builder - Demo Image"
                     draggable="false" />
+                <div class="project-page-arrow">
+                    <span>Visit Project Page</span>
+                    <img src="./img/right-arrow.svg" draggable="false"></img>
+                </div>
                 <div class="frosted-glass">
                     <h2>Village Builder</h2>
 
                     <p class="project-showcase-platforms">
-                        Windows
+                        Windows (2018 - 2020)
                     </p>
 
                     <p class="project-showcase-description">
@@ -164,5 +176,7 @@
         </footer>
     </section>
 </body>
+
+<script src="./scrollanimations.js"></script>
 
 </html>

@@ -74,11 +74,15 @@ button:hover {
   bottom: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #landingPage {
   height: 100vh;
   min-height: 500px;
   position: relative;
-  background-color: #242f38;
+  background-color: #0b0b0b;
 }
 
 #nameSection {
@@ -123,12 +127,13 @@ button:hover {
   column-gap: 20px;
   width: 175px;
 }
-#navBar span {
+#navBar p {
   cursor: pointer;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s color ease-in-out, 0.5s transform;
 }
-#navBar span:hover {
+#navBar p:hover {
   color: #0081b8 !important;
+  transform: translate(0px, -2px);
 }
 
 #socialMedia {
@@ -156,6 +161,7 @@ button:hover {
 }
 .social-icon:hover {
   filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
+  transform: translateY(-3px);
 }
 
 .project-showcase {
@@ -170,6 +176,7 @@ button:hover {
 
 #projectsPage {
   padding-bottom: 100px;
+  background-color: #0b0b0b;
 }
 #projectsPage h1 {
   text-align: center;
@@ -184,14 +191,42 @@ button:hover {
   margin-top: 100px;
   position: relative;
   overflow: hidden;
+  opacity: 0;
   box-shadow: 9px 10px 29px 2px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  transition: 0.5s box-shadow ease-in-out;
+  transition: 0.5s box-shadow ease-in-out, 0.5s transform ease-out;
 }
 .project-showcase img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.project-showcase:hover {
+  transform: translateY(-5px);
+}
+.project-showcase:hover .project-page-arrow {
+  opacity: 1;
+  transform: translateX(-25px);
+}
+.project-showcase .project-page-arrow {
+  position: absolute;
+  bottom: 25px;
+  transform: translateX(-50%);
+  right: 0;
+  padding: 0 10px 10px 0;
+  transition: 0.5s ease-in-out;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Reem Kufi", sans-serif !important;
+  color: #cbcbcb;
+  opacity: 0;
+}
+.project-showcase .project-page-arrow img {
+  filter: invert(100%) sepia(64%) saturate(56%) hue-rotate(292deg) brightness(89%) contrast(78%);
+  width: 40px;
 }
 
 .frosted-glass {
@@ -225,8 +260,7 @@ button:hover {
 #aboutPage {
   height: 75vh;
   min-height: 625px;
-  margin-top: 50px;
-  background-color: #222324;
+  background-color: #0b0b0b;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   text-align: center;
@@ -266,6 +300,36 @@ button:hover {
 }
 #aboutPage footer #nameAndYear {
   height: 30px;
+}
+
+@keyframes slide-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-33%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes slide-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(33%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.slide-in-from-left {
+  animation: slide-in-from-left 1s ease;
+  opacity: 1;
+}
+
+.slide-in-from-right {
+  animation: slide-in-from-right 1s ease;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 900px) {
@@ -328,10 +392,13 @@ button:hover {
   }
 
   #projectsPage {
-    padding: 0 25px 0 25px;
+    padding: 0 25px 50px 25px;
   }
   #projectsPage .project-showcase:first-of-type {
     margin-top: 50px;
+  }
+  #projectsPage .project-showcase:hover .project-page-arrow {
+    transform: translateX(-25%);
   }
   #projectsPage .project-showcase .frosted-glass {
     padding: 0;
@@ -464,10 +531,12 @@ body {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  transition: 0.3s;
 }
 #promoHeaderWrapper #downloadButton:hover,
 #promoHeaderWrapper #releasesMobileButton:hover {
-  background-color: #00bdca !important;
+  background-color: #00eeff !important;
+  transform: translateY(-3px);
 }
 #promoHeaderWrapper #releasesMobileButton {
   display: none;
@@ -501,7 +570,6 @@ body {
 
 #githubSocial {
   margin-left: 6.5vw;
-  transition: 0.5s filter ease;
 }
 
 .accent {
