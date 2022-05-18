@@ -252,6 +252,9 @@ body {
   /* This value is the OPPOSITE color of our background */
   mix-blend-mode: difference;
 }
+.frosted-glass .project-showcase-platforms span {
+  white-space: nowrap;
+}
 .frosted-glass .project-showcase-description {
   margin-top: 25px;
   padding-right: 25px;
@@ -259,7 +262,7 @@ body {
 
 #aboutPage {
   height: 75vh;
-  min-height: 625px;
+  min-height: 750px;
   background-color: #0b0b0b;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
@@ -482,7 +485,7 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #16191a;
+  background-color: #0b0b0b;
   color: #cbcbcb;
 }
 
