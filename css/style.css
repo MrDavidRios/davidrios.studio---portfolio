@@ -7,7 +7,7 @@ button {
   transition: 0.5s background-color;
 }
 button:hover {
-  background-color: #3e66fb !important;
+  background-color: #00b2ff !important;
 }
 
 .badge {
@@ -85,6 +85,19 @@ body {
   background-color: #0b0b0b;
 }
 
+#backgroundVideoContainer {
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  filter: opacity(0.1);
+}
+#backgroundVideoContainer #pivotPongVid {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
 #nameSection {
   text-align: left;
   margin-left: 15%;
@@ -95,11 +108,12 @@ body {
   row-gap: 15px;
 }
 #nameSection h1 {
+  margin-left: -4px;
   font-size: 60px;
   font-family: "Reem Kufi", sans-serif !important;
 }
-#nameSection h3 {
-  margin-left: 4px;
+#nameSection span {
+  padding: 0 2px;
 }
 #nameSection button {
   width: 175px;
@@ -260,6 +274,43 @@ body {
   padding-right: 25px;
 }
 
+@supports not (backdrop-filter: blur(10px)) {
+  .frosted-glass::before {
+    background-image: url("./img/pivotpongsamplescreenshot.png");
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    bottom: -100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    filter: blur(10px);
+    z-index: 0;
+  }
+
+  .frosted-glass::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+  }
+
+  .project-showcase a {
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+  }
+}
 #aboutPage {
   height: 75vh;
   min-height: 750px;
@@ -335,6 +386,32 @@ body {
   opacity: 1;
 }
 
+.typewriter h3 {
+  overflow: hidden;
+  border-right: 0.15em solid #00b2ff;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  text-align: left;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00b2ff;
+  }
+}
 @media only screen and (max-width: 900px) {
   #promo {
     grid-template-columns: 100% !important;
@@ -378,6 +455,9 @@ body {
   #landingPage {
     display: flex;
     justify-content: center;
+  }
+  #landingPage #backgroundVideoContainer {
+    display: none;
   }
   #landingPage #nameSection {
     margin-left: 0;

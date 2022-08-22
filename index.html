@@ -21,26 +21,34 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>David Rios — Game, Front-End Developer</title>
+    <title>David Rios</title>
 
 </head>
 
 <body>
     <section id="landingPage">
-        <h3 id="logo" onclick="location.href='/index.html'" title="Logo">DR</h3>
+        <div id="backgroundVideoContainer">
+            <video autoplay muted loop preload="none" id="pivotPongVid">
+                <source src="videos/pivot_pong_background.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 id="logo" onpointerdown="location.href='/index.html'" title="Logo">DR</h3>
         <div id="navBar">
-            <p><span onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
+            <p><span onpointerdown="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
                     tabindex="0">Projects</span>
             </p>
-            <p><span onclick="document.getElementById('aboutPage').scrollIntoView({behavior: 'smooth'})"
+            <p><span onpointerdown="document.getElementById('aboutPage').scrollIntoView({behavior: 'smooth'})"
                     tabindex="0">About/Contact</span>
             </p>
         </div>
         <div id="nameSection">
             <h1>David Rios</h1>
-            <h3>Game Progammer<span class="accent">/</span>Front-End Developer<span class="accent">/</span>College
-                Student</h3>
-            <button onclick="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
+            <div class="typewriter">
+                <h3>Front-End Developer<span class="accent">\</span>Game Developer<span class="accent">\</span>Student
+                </h3>
+            </div>
+            <button onpointerdown="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
                 tabindex="0">See
                 more!</button>
         </div>
@@ -67,7 +75,7 @@
                     <h2>Remindr</h2>
 
                     <p class="project-showcase-platforms">
-                        Windows, MacOS, Linux <span>(2020 - )</span>
+                        Windows, MacOS, Linux <span>(2020 - 2022)</span>
                     </p>
 
                     <p class="project-showcase-description">
@@ -81,7 +89,7 @@
                             <ul class="sublist">
                                 <li>HTML</li>
                                 <li>JavaScript (TypeScript)</li>
-                                <li>CSS (SASS)</li>
+                                <li>CSS (Sass)</li>
                                 <li>Node.js</li>
                             </ul>
                         </li>
@@ -144,13 +152,11 @@
         <h1 class="section-title">About Me</h1>
         <div id="about">
             <p>
-                I’m David Rios, a college student who likes to play around in <span class="accent">VSCode</span> and
-                <span class="accent">Unity</span>.
+                I’m <span class="accent">David Rios</span>, a sophomore in Computer Science at Columbia University.
             </p>
             <br>
             <p>
-                I enjoy creating and experimenting with new software and technologies. I work on software to make minute
-                tasks less time-consuming, learning about how to make more intuitive interfaces in the process.
+                I enjoy creating and experimenting with new software and technologies. I
             </p>
         </div>
         <div>
@@ -158,14 +164,14 @@
         <footer>
             <div id="socialMedia">
                 <a href="https://davidrios.itch.io" target="_blank"><img src="icons/gamepad.svg" id="itchioSocial"
-                        class="social-icon" alt="Link to my itch.io page" title="My itch.io page" draggable="false"
+                        class="social-icon" alt="My itch.io page" title="My itch.io page" draggable="false"
                         tabindex="0" /></a>
                 <a href="https://github.com/MrDavidRios/" target="_blank"><img src="icons/github.svg" id="githubSocial"
-                        class="social-icon" alt="Link to my GitHub page" title="My GitHub page" draggable="false"
+                        class="social-icon" alt="My GitHub page" title="My GitHub page" draggable="false"
                         tabindex="0" /></a>
-                <a href="https://www.linkedin.com/in/david-rios-b5174a1a8/" target="_blank"><img
-                        src="icons/linkedin.svg" id="linkedinSocial" class="social-icon" alt="Link to my LinkedIn page"
-                        title="My LinkedIn page" draggable="false" tabindex="0" /></a>
+                <a href="https://www.linkedin.com/in/drios03/" target="_blank"><img src="icons/linkedin.svg"
+                        id="linkedinSocial" class="social-icon" alt="My LinkedIn page" title="My LinkedIn page"
+                        draggable="false" tabindex="0" /></a>
             </div>
             <div id="email">
                 <a href="mailto:mr.daverios@gmail.com" target="_blank"><img src="icons/email.svg" id="emailIcon"
