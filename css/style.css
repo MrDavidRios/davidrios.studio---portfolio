@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 button {
   border: none;
@@ -105,12 +106,14 @@ body {
   top: 30%;
   display: grid;
   grid-template-rows: auto auto auto;
-  row-gap: 15px;
 }
 #nameSection h1 {
   margin-left: -4px;
   font-size: 60px;
   font-family: "Reem Kufi", sans-serif !important;
+}
+#nameSection h3 {
+  padding-bottom: 15px;
 }
 #nameSection span {
   padding: 0 2px;
@@ -386,32 +389,723 @@ body {
   opacity: 1;
 }
 
-.typewriter h3 {
-  overflow: hidden;
-  border-right: 0.15em solid #00b2ff;
+#typedDescription::before {
+  content: "​";
+  content: "​"/"Front-End Developer | Game Developer | Student";
+  alt: "Front-End Developer | Game Developer | Student";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 11.28s linear 1s 0 forwards, typed-0-final 4.6s linear 1s 1 forwards;
+}
+@keyframes typed-0-final {
+  0%, 2.1739130435% {
+    content: "​F";
+    content: "​F"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  2.1749130435%, 4.347826087% {
+    content: "​Fr";
+    content: "​Fr"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  4.348826087%, 6.5217391304% {
+    content: "​Fro";
+    content: "​Fro"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  6.5227391304%, 8.6956521739% {
+    content: "​Fron";
+    content: "​Fron"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  8.6966521739%, 10.8695652174% {
+    content: "​Front";
+    content: "​Front"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  10.8705652174%, 13.0434782609% {
+    content: "​Front-";
+    content: "​Front-"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  13.0444782609%, 15.2173913043% {
+    content: "​Front-E";
+    content: "​Front-E"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  15.2183913043%, 17.3913043478% {
+    content: "​Front-En";
+    content: "​Front-En"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  17.3923043478%, 19.5652173913% {
+    content: "​Front-End";
+    content: "​Front-End"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  19.5662173913%, 21.7391304348% {
+    content: "​Front-End ";
+    content: "​Front-End "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  21.7401304348%, 23.9130434783% {
+    content: "​Front-End D";
+    content: "​Front-End D"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  23.9140434783%, 26.0869565217% {
+    content: "​Front-End De";
+    content: "​Front-End De"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  26.0879565217%, 28.2608695652% {
+    content: "​Front-End Dev";
+    content: "​Front-End Dev"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  28.2618695652%, 30.4347826087% {
+    content: "​Front-End Deve";
+    content: "​Front-End Deve"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  30.4357826087%, 32.6086956522% {
+    content: "​Front-End Devel";
+    content: "​Front-End Devel"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  32.6096956522%, 34.7826086957% {
+    content: "​Front-End Develo";
+    content: "​Front-End Develo"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  34.7836086957%, 36.9565217391% {
+    content: "​Front-End Develop";
+    content: "​Front-End Develop"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  36.9575217391%, 39.1304347826% {
+    content: "​Front-End Develope";
+    content: "​Front-End Develope"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  39.1314347826%, 41.3043478261% {
+    content: "​Front-End Developer";
+    content: "​Front-End Developer"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  41.3053478261%, 43.4782608696% {
+    content: "​Front-End Developer ";
+    content: "​Front-End Developer "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  43.4792608696%, 45.652173913% {
+    content: "​Front-End Developer |";
+    content: "​Front-End Developer |"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  45.653173913%, 47.8260869565% {
+    content: "​Front-End Developer | ";
+    content: "​Front-End Developer | "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  47.8270869565%, 50% {
+    content: "​Front-End Developer | G";
+    content: "​Front-End Developer | G"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  50.001%, 52.1739130435% {
+    content: "​Front-End Developer | Ga";
+    content: "​Front-End Developer | Ga"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  52.1749130435%, 54.347826087% {
+    content: "​Front-End Developer | Gam";
+    content: "​Front-End Developer | Gam"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  54.348826087%, 56.5217391304% {
+    content: "​Front-End Developer | Game";
+    content: "​Front-End Developer | Game"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  56.5227391304%, 58.6956521739% {
+    content: "​Front-End Developer | Game ";
+    content: "​Front-End Developer | Game "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  58.6966521739%, 60.8695652174% {
+    content: "​Front-End Developer | Game D";
+    content: "​Front-End Developer | Game D"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  60.8705652174%, 63.0434782609% {
+    content: "​Front-End Developer | Game De";
+    content: "​Front-End Developer | Game De"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  63.0444782609%, 65.2173913043% {
+    content: "​Front-End Developer | Game Dev";
+    content: "​Front-End Developer | Game Dev"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  65.2183913043%, 67.3913043478% {
+    content: "​Front-End Developer | Game Deve";
+    content: "​Front-End Developer | Game Deve"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  67.3923043478%, 69.5652173913% {
+    content: "​Front-End Developer | Game Devel";
+    content: "​Front-End Developer | Game Devel"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  69.5662173913%, 71.7391304348% {
+    content: "​Front-End Developer | Game Develo";
+    content: "​Front-End Developer | Game Develo"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  71.7401304348%, 73.9130434783% {
+    content: "​Front-End Developer | Game Develop";
+    content: "​Front-End Developer | Game Develop"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  73.9140434783%, 76.0869565217% {
+    content: "​Front-End Developer | Game Develope";
+    content: "​Front-End Developer | Game Develope"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  76.0879565217%, 78.2608695652% {
+    content: "​Front-End Developer | Game Developer";
+    content: "​Front-End Developer | Game Developer"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  78.2618695652%, 80.4347826087% {
+    content: "​Front-End Developer | Game Developer ";
+    content: "​Front-End Developer | Game Developer "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  80.4357826087%, 82.6086956522% {
+    content: "​Front-End Developer | Game Developer |";
+    content: "​Front-End Developer | Game Developer |"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  82.6096956522%, 84.7826086957% {
+    content: "​Front-End Developer | Game Developer | ";
+    content: "​Front-End Developer | Game Developer | "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  84.7836086957%, 86.9565217391% {
+    content: "​Front-End Developer | Game Developer | S";
+    content: "​Front-End Developer | Game Developer | S"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  86.9575217391%, 89.1304347826% {
+    content: "​Front-End Developer | Game Developer | St";
+    content: "​Front-End Developer | Game Developer | St"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  89.1314347826%, 91.3043478261% {
+    content: "​Front-End Developer | Game Developer | Stu";
+    content: "​Front-End Developer | Game Developer | Stu"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  91.3053478261%, 93.4782608696% {
+    content: "​Front-End Developer | Game Developer | Stud";
+    content: "​Front-End Developer | Game Developer | Stud"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  93.4792608696%, 95.652173913% {
+    content: "​Front-End Developer | Game Developer | Stude";
+    content: "​Front-End Developer | Game Developer | Stude"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  95.653173913%, 97.8260869565% {
+    content: "​Front-End Developer | Game Developer | Studen";
+    content: "​Front-End Developer | Game Developer | Studen"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  97.8270869565%, 100% {
+    content: "​Front-End Developer | Game Developer | Student";
+    content: "​Front-End Developer | Game Developer | Student"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+}
+#typedDescription::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 0.1ch;
+  border-right: 1ch solid currentColor;
   white-space: nowrap;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  text-align: left;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
 }
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes typed-0 {
+  0%, 0.8855248227% {
+    content: "​F";
+    content: "​F"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
   }
-  to {
-    width: 100%;
+  0.8865248227%, 1.7720496454% {
+    content: "​Fr";
+    content: "​Fr"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  1.7730496454%, 2.6585744681% {
+    content: "​Fro";
+    content: "​Fro"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  2.6595744681%, 3.5450992908% {
+    content: "​Fron";
+    content: "​Fron"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  3.5460992908%, 4.4316241135% {
+    content: "​Front";
+    content: "​Front"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  4.4326241135%, 5.3181489362% {
+    content: "​Front-";
+    content: "​Front-"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  5.3191489362%, 6.2046737589% {
+    content: "​Front-E";
+    content: "​Front-E"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  6.2056737589%, 7.0911985816% {
+    content: "​Front-En";
+    content: "​Front-En"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  7.0921985816%, 7.9777234043% {
+    content: "​Front-End";
+    content: "​Front-End"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  7.9787234043%, 8.864248227% {
+    content: "​Front-End ";
+    content: "​Front-End "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  8.865248227%, 9.7507730496% {
+    content: "​Front-End D";
+    content: "​Front-End D"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  9.7517730496%, 10.6372978723% {
+    content: "​Front-End De";
+    content: "​Front-End De"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  10.6382978723%, 11.523822695% {
+    content: "​Front-End Dev";
+    content: "​Front-End Dev"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  11.524822695%, 12.4103475177% {
+    content: "​Front-End Deve";
+    content: "​Front-End Deve"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  12.4113475177%, 13.2968723404% {
+    content: "​Front-End Devel";
+    content: "​Front-End Devel"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  13.2978723404%, 14.1833971631% {
+    content: "​Front-End Develo";
+    content: "​Front-End Develo"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  14.1843971631%, 15.0699219858% {
+    content: "​Front-End Develop";
+    content: "​Front-End Develop"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  15.0709219858%, 15.9564468085% {
+    content: "​Front-End Develope";
+    content: "​Front-End Develope"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  15.9574468085%, 16.8429716312% {
+    content: "​Front-End Developer";
+    content: "​Front-End Developer"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  16.8439716312%, 17.7294964539% {
+    content: "​Front-End Developer ";
+    content: "​Front-End Developer "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  17.7304964539%, 18.6160212766% {
+    content: "​Front-End Developer |";
+    content: "​Front-End Developer |"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  18.6170212766%, 19.5025460993% {
+    content: "​Front-End Developer | ";
+    content: "​Front-End Developer | "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  19.5035460993%, 20.389070922% {
+    content: "​Front-End Developer | G";
+    content: "​Front-End Developer | G"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  20.390070922%, 21.2755957447% {
+    content: "​Front-End Developer | Ga";
+    content: "​Front-End Developer | Ga"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  21.2765957447%, 22.1621205674% {
+    content: "​Front-End Developer | Gam";
+    content: "​Front-End Developer | Gam"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  22.1631205674%, 23.0486453901% {
+    content: "​Front-End Developer | Game";
+    content: "​Front-End Developer | Game"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  23.0496453901%, 23.9351702128% {
+    content: "​Front-End Developer | Game ";
+    content: "​Front-End Developer | Game "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  23.9361702128%, 24.8216950355% {
+    content: "​Front-End Developer | Game D";
+    content: "​Front-End Developer | Game D"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  24.8226950355%, 25.7082198582% {
+    content: "​Front-End Developer | Game De";
+    content: "​Front-End Developer | Game De"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  25.7092198582%, 26.5947446809% {
+    content: "​Front-End Developer | Game Dev";
+    content: "​Front-End Developer | Game Dev"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  26.5957446809%, 27.4812695035% {
+    content: "​Front-End Developer | Game Deve";
+    content: "​Front-End Developer | Game Deve"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  27.4822695035%, 28.3677943262% {
+    content: "​Front-End Developer | Game Devel";
+    content: "​Front-End Developer | Game Devel"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  28.3687943262%, 29.2543191489% {
+    content: "​Front-End Developer | Game Develo";
+    content: "​Front-End Developer | Game Develo"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  29.2553191489%, 30.1408439716% {
+    content: "​Front-End Developer | Game Develop";
+    content: "​Front-End Developer | Game Develop"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  30.1418439716%, 31.0273687943% {
+    content: "​Front-End Developer | Game Develope";
+    content: "​Front-End Developer | Game Develope"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  31.0283687943%, 31.913893617% {
+    content: "​Front-End Developer | Game Developer";
+    content: "​Front-End Developer | Game Developer"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  31.914893617%, 32.8004184397% {
+    content: "​Front-End Developer | Game Developer ";
+    content: "​Front-End Developer | Game Developer "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  32.8014184397%, 33.6869432624% {
+    content: "​Front-End Developer | Game Developer |";
+    content: "​Front-End Developer | Game Developer |"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  33.6879432624%, 34.5734680851% {
+    content: "​Front-End Developer | Game Developer | ";
+    content: "​Front-End Developer | Game Developer | "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  34.5744680851%, 35.4599929078% {
+    content: "​Front-End Developer | Game Developer | S";
+    content: "​Front-End Developer | Game Developer | S"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  35.4609929078%, 36.3465177305% {
+    content: "​Front-End Developer | Game Developer | St";
+    content: "​Front-End Developer | Game Developer | St"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  36.3475177305%, 37.2330425532% {
+    content: "​Front-End Developer | Game Developer | Stu";
+    content: "​Front-End Developer | Game Developer | Stu"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  37.2340425532%, 38.1195673759% {
+    content: "​Front-End Developer | Game Developer | Stud";
+    content: "​Front-End Developer | Game Developer | Stud"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  38.1205673759%, 39.0060921986% {
+    content: "​Front-End Developer | Game Developer | Stude";
+    content: "​Front-End Developer | Game Developer | Stude"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  39.0070921986%, 39.8926170213% {
+    content: "​Front-End Developer | Game Developer | Studen";
+    content: "​Front-End Developer | Game Developer | Studen"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  39.8936170213%, 59.218858156% {
+    content: "​Front-End Developer | Game Developer | Student";
+    content: "​Front-End Developer | Game Developer | Student"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  59.219858156%, 59.9280780142% {
+    content: "​Front-End Developer | Game Developer | Studen";
+    content: "​Front-End Developer | Game Developer | Studen"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  59.9290780142%, 60.6372978723% {
+    content: "​Front-End Developer | Game Developer | Stude";
+    content: "​Front-End Developer | Game Developer | Stude"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  60.6382978723%, 61.3465177305% {
+    content: "​Front-End Developer | Game Developer | Stud";
+    content: "​Front-End Developer | Game Developer | Stud"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  61.3475177305%, 62.0557375887% {
+    content: "​Front-End Developer | Game Developer | Stu";
+    content: "​Front-End Developer | Game Developer | Stu"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  62.0567375887%, 62.7649574468% {
+    content: "​Front-End Developer | Game Developer | St";
+    content: "​Front-End Developer | Game Developer | St"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  62.7659574468%, 63.474177305% {
+    content: "​Front-End Developer | Game Developer | S";
+    content: "​Front-End Developer | Game Developer | S"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  63.475177305%, 64.1833971631% {
+    content: "​Front-End Developer | Game Developer | ";
+    content: "​Front-End Developer | Game Developer | "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  64.1843971631%, 64.8926170213% {
+    content: "​Front-End Developer | Game Developer |";
+    content: "​Front-End Developer | Game Developer |"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  64.8936170213%, 65.6018368794% {
+    content: "​Front-End Developer | Game Developer ";
+    content: "​Front-End Developer | Game Developer "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  65.6028368794%, 66.3110567376% {
+    content: "​Front-End Developer | Game Developer";
+    content: "​Front-End Developer | Game Developer"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  66.3120567376%, 67.0202765957% {
+    content: "​Front-End Developer | Game Develope";
+    content: "​Front-End Developer | Game Develope"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  67.0212765957%, 67.7294964539% {
+    content: "​Front-End Developer | Game Develop";
+    content: "​Front-End Developer | Game Develop"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  67.7304964539%, 68.4387163121% {
+    content: "​Front-End Developer | Game Develo";
+    content: "​Front-End Developer | Game Develo"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  68.4397163121%, 69.1479361702% {
+    content: "​Front-End Developer | Game Devel";
+    content: "​Front-End Developer | Game Devel"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  69.1489361702%, 69.8571560284% {
+    content: "​Front-End Developer | Game Deve";
+    content: "​Front-End Developer | Game Deve"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  69.8581560284%, 70.5663758865% {
+    content: "​Front-End Developer | Game Dev";
+    content: "​Front-End Developer | Game Dev"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  70.5673758865%, 71.2755957447% {
+    content: "​Front-End Developer | Game De";
+    content: "​Front-End Developer | Game De"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  71.2765957447%, 71.9848156028% {
+    content: "​Front-End Developer | Game D";
+    content: "​Front-End Developer | Game D"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  71.9858156028%, 72.694035461% {
+    content: "​Front-End Developer | Game ";
+    content: "​Front-End Developer | Game "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  72.695035461%, 73.4032553191% {
+    content: "​Front-End Developer | Game";
+    content: "​Front-End Developer | Game"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  73.4042553191%, 74.1124751773% {
+    content: "​Front-End Developer | Gam";
+    content: "​Front-End Developer | Gam"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  74.1134751773%, 74.8216950355% {
+    content: "​Front-End Developer | Ga";
+    content: "​Front-End Developer | Ga"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  74.8226950355%, 75.5309148936% {
+    content: "​Front-End Developer | G";
+    content: "​Front-End Developer | G"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  75.5319148936%, 76.2401347518% {
+    content: "​Front-End Developer | ";
+    content: "​Front-End Developer | "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  76.2411347518%, 76.9493546099% {
+    content: "​Front-End Developer |";
+    content: "​Front-End Developer |"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  76.9503546099%, 77.6585744681% {
+    content: "​Front-End Developer ";
+    content: "​Front-End Developer "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  77.6595744681%, 78.3677943262% {
+    content: "​Front-End Developer";
+    content: "​Front-End Developer"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  78.3687943262%, 79.0770141844% {
+    content: "​Front-End Develope";
+    content: "​Front-End Develope"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  79.0780141844%, 79.7862340426% {
+    content: "​Front-End Develop";
+    content: "​Front-End Develop"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  79.7872340426%, 80.4954539007% {
+    content: "​Front-End Develo";
+    content: "​Front-End Develo"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  80.4964539007%, 81.2046737589% {
+    content: "​Front-End Devel";
+    content: "​Front-End Devel"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  81.2056737589%, 81.913893617% {
+    content: "​Front-End Deve";
+    content: "​Front-End Deve"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  81.914893617%, 82.6231134752% {
+    content: "​Front-End Dev";
+    content: "​Front-End Dev"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  82.6241134752%, 83.3323333333% {
+    content: "​Front-End De";
+    content: "​Front-End De"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  83.3333333333%, 84.0415531915% {
+    content: "​Front-End D";
+    content: "​Front-End D"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  84.0425531915%, 84.7507730496% {
+    content: "​Front-End ";
+    content: "​Front-End "/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  84.7517730496%, 85.4599929078% {
+    content: "​Front-End";
+    content: "​Front-End"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  85.4609929078%, 86.169212766% {
+    content: "​Front-En";
+    content: "​Front-En"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  86.170212766%, 86.8784326241% {
+    content: "​Front-E";
+    content: "​Front-E"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  86.8794326241%, 87.5876524823% {
+    content: "​Front-";
+    content: "​Front-"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  87.5886524823%, 88.2968723404% {
+    content: "​Front";
+    content: "​Front"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  88.2978723404%, 89.0060921986% {
+    content: "​Fron";
+    content: "​Fron"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  89.0070921986%, 89.7153120567% {
+    content: "​Fro";
+    content: "​Fro"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  89.7163120567%, 90.4245319149% {
+    content: "​Fr";
+    content: "​Fr"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  90.4255319149%, 91.133751773% {
+    content: "​F";
+    content: "​F"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
+  }
+  91.134751773%, 100% {
+    content: "​";
+    content: "​"/"Front-End Developer | Game Developer | Student";
+    alt: "Front-End Developer | Game Developer | Student";
   }
 }
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to {
+@keyframes typed-0-caret {
+  75% {
     border-color: transparent;
   }
-  50% {
-    border-color: #00b2ff;
-  }
 }
+
 @media only screen and (max-width: 900px) {
   #promo {
     grid-template-columns: 100% !important;
