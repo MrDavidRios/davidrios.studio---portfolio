@@ -1,5 +1,5 @@
 # mrdavidrios.github.io
 
-Codebase for davidrios.studio website.
+Codebase for mrdavidrios.studio website.
 
 CSS files created with SASS.
