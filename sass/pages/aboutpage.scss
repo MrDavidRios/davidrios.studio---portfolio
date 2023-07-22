@@ -1,58 +1,58 @@
 #aboutPage {
-	height: 75vh;
-	min-height: 750px;
+  height: 75vh;
+  min-height: 750px;
 
-	background-color: rgb(11, 11, 11);
+  background-color: rgb(11, 11, 11);
 
-	display: grid;
-	grid-template-rows: auto auto 1fr auto;
-	text-align: center;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  text-align: center;
 
-	#about {
-		padding-top: 50px;
-		margin: auto;
-		width: 50%;
+  #about {
+    padding-top: 50px;
+    margin: auto;
+    width: 50%;
 
-		font-size: 17px;
-	}
+    font-size: 17px;
+  }
 
-	footer {
-		height: min-content;
-		width: 100%;
+  footer {
+    height: min-content;
+    width: 100%;
 
-		padding-top: 50px;
+    padding: 50px 0 20px 0;
 
-		display: grid;
-		grid-template-rows: auto auto auto;
-		row-gap: 10px;
-		justify-content: center;
-		align-items: end;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: end;
 
-		text-align: center;
+    text-align: center;
 
-		#socialMedia {
-			position: static;
-			margin: auto;
-			width: 160px;
-		}
+    #socialMedia {
+      position: static;
+      margin: auto;
+      width: 160px;
+    }
 
-		#email {
-			display: grid;
-			grid-template-columns: auto auto;
-			align-items: center;
-			width: min-content;
-			column-gap: 10px;
+    #email {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      width: min-content;
+      column-gap: 10px;
 
-			img {
-				margin-top: 7px;
+      img {
+        margin-top: 7px;
 
-				width: 32px;
-				height: 32px;
-			}
-		}
+        width: 32px;
+        height: 32px;
+      }
+    }
 
-		#nameAndYear {
-			height: 30px;
-		}
-	}
+    #nameAndYear {
+      height: 30px;
+    }
+  }
 }
