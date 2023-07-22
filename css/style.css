@@ -201,23 +201,25 @@ body {
 }
 
 .project-showcase {
-  margin: 0 auto;
-  width: 60vw;
-  max-width: 1000px;
-  height: 66vh;
-  margin-top: 100px;
   position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 66vh;
+  width: 60vw;
+  margin-top: 100px;
   overflow: hidden;
   opacity: 0;
   box-shadow: 9px 10px 29px 2px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  transition: 0.5s box-shadow ease-in-out, 0.5s transform ease-out;
+  transition: 0.35s box-shadow ease-in-out, 0.35s transform ease-out;
 }
-.project-showcase img {
+.project-showcase .background-img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: opacity(0.5);
+  transition: 0.35s filter ease-in-out;
+  filter: opacity(0.5) blur(10px);
 }
 .project-showcase:hover {
   transform: translateY(-5px);
@@ -226,13 +228,19 @@ body {
   opacity: 1;
   transform: translateX(-25px);
 }
+.project-showcase:hover .background-img {
+  filter: opacity(1) blur(0px);
+}
+.project-showcase:hover .background-img.bright {
+  filter: opacity(0.5) blur(0px);
+}
 .project-showcase .project-page-arrow {
   position: absolute;
   bottom: 25px;
   transform: translateX(-50%);
   right: 0;
   padding: 0 10px 10px 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.35s ease-in-out;
   display: grid;
   column-gap: 10px;
   grid-template-columns: auto auto;
@@ -247,74 +255,28 @@ body {
   width: 40px;
 }
 
-.frosted-glass {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  position: absolute;
-  bottom: 0;
-  width: 60vw;
+.project-description {
+  position: relative;
   max-width: 1000px;
-  height: 100%;
-  transition: 0.5s opacity ease-in-out;
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  text-decoration: none;
+  transition: 0.35s opacity ease-in-out;
   font-family: "Reem Kufi", sans-serif !important;
   color: #cbcbcb;
   padding: 25px 0 0 25px;
 }
-.frosted-glass:hover {
+.project-description:hover {
   opacity: 0;
 }
-.frosted-glass h2 {
-  margin-top: 25px;
-}
-.frosted-glass h2:after {
-  /* This value is the OPPOSITE color of our background */
-  mix-blend-mode: difference;
-}
-.frosted-glass .project-showcase-platforms span {
+.project-description .project-showcase-platforms span {
   white-space: nowrap;
 }
-.frosted-glass .project-showcase-description {
+.project-description .project-showcase-description {
   margin-top: 25px;
   padding-right: 25px;
 }
 
-@supports not (backdrop-filter: blur(10px)) {
-  .frosted-glass::before {
-    background-image: url("./img/pivotpongsamplescreenshot.png");
-    content: "";
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    right: -100px;
-    bottom: -100px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    filter: blur(10px);
-    z-index: 0;
-  }
-
-  .frosted-glass::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.5);
-    z-index: 1;
-  }
-
-  .project-showcase a {
-    height: 100%;
-    display: block;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-  }
-}
 #aboutPage {
   height: 75vh;
   min-height: 750px;
@@ -381,14 +343,44 @@ body {
     transform: translateX(0px);
   }
 }
+@keyframes slide-out-from-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(33%);
+  }
+}
+@keyframes slide-out-from-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-33%);
+  }
+}
 .slide-in-from-left {
-  animation: slide-in-from-left 1s ease;
+  animation: slide-in-from-left 1.25s ease;
   opacity: 1;
 }
 
+.slide-out-from-left {
+  animation: slide-out-from-left 1.25s ease;
+  opacity: 0;
+}
+
 .slide-in-from-right {
-  animation: slide-in-from-right 1s ease;
+  animation: slide-in-from-right 1.25s ease;
   opacity: 1;
+}
+
+.slide-out-from-right {
+  animation: slide-out-from-right 1.25s ease;
+  opacity: 0;
 }
 
 #typedDescription::before {
@@ -1179,14 +1171,14 @@ body {
   #projectsPage .project-showcase:hover .project-page-arrow {
     transform: translateX(-25%);
   }
-  #projectsPage .project-showcase .frosted-glass {
-    padding: 0;
+  #projectsPage .project-showcase .project-description {
+    padding: 25px 0 0 0;
     text-align: center;
   }
-  #projectsPage .project-showcase .frosted-glass .project-showcase-description {
+  #projectsPage .project-showcase .project-description .project-showcase-description {
     padding: 0 15px 0 15px;
   }
-  #projectsPage .project-showcase .frosted-glass .project-showcase-description-bulletlist {
+  #projectsPage .project-showcase .project-description .project-showcase-description-bulletlist {
     display: none;
   }
 
@@ -1359,6 +1351,10 @@ body {
   padding-top: 50px;
   font-size: 60px;
   font-family: "Reem Kufi", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
 }
 
 @keyframes drop {

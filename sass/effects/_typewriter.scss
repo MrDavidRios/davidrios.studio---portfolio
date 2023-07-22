@@ -1,0 +1,12 @@
+@use '../variables' as *;
+@import 'typed';
+
+#typedDescription {
+	@include typed(
+		'Front-End Developer | Game Developer | Student',
+		null,
+		(
+			iterations: 0
+		)
+	);
+}

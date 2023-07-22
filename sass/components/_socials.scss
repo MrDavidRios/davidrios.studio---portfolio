@@ -1,0 +1,57 @@
+@mixin adjustSocialsForMobile {
+	grid-template-rows: auto;
+	grid-template-columns: 32px 32px;
+	column-gap: 5px;
+
+	margin: 0px 0px 20px 0px;
+
+	transform: translateX(-50%);
+	justify-content: center;
+}
+
+.github {
+	width: 32px;
+	height: 32px;
+
+	filter: invert(99%) sepia(0%) saturate(1136%) hue-rotate(222deg) brightness(90%) contrast(91%);
+
+	&:hover {
+		filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
+	}
+}
+
+//Parent
+#social-link {
+	div {
+		// Child
+		display: grid;
+		grid-template-rows: 50px 50px;
+	}
+}
+
+.social-link-container {
+	display: grid;
+	grid-template-rows: 32px 32px;
+
+	row-gap: 5px;
+
+	margin-bottom: 10px;
+
+	div {
+		display: grid;
+		grid-template-columns: 32px auto;
+		column-gap: 5px;
+		align-items: center;
+
+		transition: 0.3s filter;
+
+		a {
+			display: flex;
+			align-items: center;
+
+			img {
+				user-select: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+@mixin absolute {
+	position: absolute;
+}
+
+.bottom-left {
+	@include absolute;
+
+	left: 0;
+	bottom: 0;
+}
+
+.bottom-right {
+	@include absolute;
+
+	right: 0;
+	bottom: 0;
+}
+
+@mixin bottom-center {
+	left: 50%;
+	bottom: 0;
+}
+
+.bottom-center {
+	@include absolute;
+	@include bottom-center;
+}
+
+@mixin right {
+	@include absolute;
+
+	right: 0;
+}
+
+@mixin top-right {
+	@include right;
+
+	top: 0;
+}
+
+@mixin center {
+	@include absolute;
+
+	left: 50%;
+	transform: translateX(-50%);
+}

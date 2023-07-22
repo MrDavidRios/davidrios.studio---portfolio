@@ -1,0 +1,200 @@
+//Abstracts
+@use "./variables" as *;
+
+// Components
+@use "./components/buttons" as *;
+@use "./components/badges" as *;
+
+@use "./components/_socials";
+
+// Positions
+@use "./positions";
+
+// Pages
+@use "./pages/homepage";
+@use "./pages/projectspage";
+@use "./pages/aboutpage";
+
+// Animations/Effects
+@use "./effects/showcaseanimations";
+@use "./effects/typewriter";
+
+// Mobile Styling
+@use "./mobilestyle";
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $backgroundColor;
+  color: #cbcbcb;
+}
+
+#logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: #9a9a9a;
+  font-size: 32px;
+
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  user-select: none;
+
+  cursor: pointer;
+}
+
+#promo {
+  display: grid;
+  grid-template-columns: 59.2vw auto;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  #promoPlatforms {
+    padding-bottom: 15px;
+  }
+}
+
+#promoHeaderWrapper {
+  width: 80%;
+  height: min-content;
+
+  margin-top: 15vh;
+
+  align-self: start;
+  justify-self: center;
+
+  #promoHeader {
+    font-weight: bold;
+    color: #b7b7b7;
+    font-size: 72px;
+  }
+
+  #downloadButton,
+  #releasesMobileButton {
+    background-color: #00ccd9;
+
+    height: 45px;
+
+    margin: 25px 0px 0px 5px;
+    padding: 0px 15px;
+
+    border-radius: 7px;
+
+    font-size: 20px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #00eeff !important;
+      transform: translateY(-3px);
+    }
+  }
+
+  #releasesMobileButton {
+    display: none;
+
+    width: 200px;
+    height: 50px;
+
+    font-size: 22px;
+
+    margin-top: 100px;
+  }
+
+  p {
+    margin: 15px 0px 0px 5px;
+
+    font-family: "Raleway", sans-serif;
+
+    color: #676767;
+    font-weight: 800;
+  }
+}
+
+#promoImg {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+
+  margin: 0px calc(5%) 15px 0px;
+
+  justify-self: end;
+  align-self: center;
+
+  height: 90vh;
+  width: 100%;
+
+  animation: drop 1.5s ease;
+
+  img {
+    border-radius: 15px;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
+
+#githubSocial {
+  margin-left: 6.5vw;
+}
+
+.accent {
+  color: $accentColor;
+}
+
+.section-title {
+  padding-top: 50px;
+  font-size: 60px;
+
+  font-family: "Reem Kufi", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2f2f2f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(92, 92, 92);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(126, 126, 126);
+}

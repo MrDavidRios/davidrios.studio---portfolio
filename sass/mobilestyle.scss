@@ -1,0 +1,176 @@
+@use "variables" as *;
+@use "positions";
+
+@media only screen and (max-width: $mobileWidth) {
+  #promo {
+    grid-template-columns: 100% !important;
+
+    #promoHeaderWrapper {
+      text-align: center;
+
+      #promoHeader {
+        font-size: 12vw !important;
+      }
+    }
+
+    #downloadButton {
+      display: none;
+    }
+
+    #releasesMobileButton {
+      display: inline !important;
+    }
+  }
+
+  #promoImg {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+
+    opacity: 0.15;
+
+    animation: drop-opaque 1.5s !important;
+  }
+
+  #githubSocial {
+    margin: 0 !important;
+    position: absolute;
+  }
+
+  .social-link-container {
+    width: 32px;
+  }
+
+  .bottom-left {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #landingPage {
+    display: flex;
+    justify-content: center;
+
+    #backgroundVideoContainer {
+      display: none;
+    }
+
+    #nameSection {
+      margin-left: 0;
+      padding: 0 25px 0 25px;
+
+      text-align: center;
+
+      button {
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+
+    #socialMedia {
+      position: initial;
+      margin-top: auto;
+      margin-bottom: 25px;
+    }
+  }
+
+  #projectsPage {
+    padding: 0 25px 50px 25px;
+
+    .project-showcase:first-of-type {
+      margin-top: 50px;
+    }
+
+    .project-showcase {
+      &:hover {
+        .project-page-arrow {
+          transform: translateX(-25%);
+        }
+      }
+
+      .project-description {
+        padding: 25px 0 0 0;
+        text-align: center;
+
+        .project-showcase-description {
+          padding: 0 15px 0 15px;
+        }
+
+        .project-showcase-description-bulletlist {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section-title {
+    padding: 25px 0 0 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  #aboutPage {
+    height: 100vh;
+
+    #about {
+      padding: 30px 50px 0 50px;
+      margin: auto;
+    }
+
+    #nameAndYear {
+      padding-bottom: 10px;
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-height: $shortHeight) {
+  .social-link-container {
+    margin: 0 !important;
+    position: fixed;
+    top: 20px;
+    left: calc(100% - 35px);
+  }
+
+  #landingPage {
+    #socialMedia {
+      position: initial;
+      margin-top: auto;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media only screen and (max-height: $shortHeight) and (min-width: $mobileWidth) {
+  #landingPage {
+    #socialMedia {
+      position: absolute;
+      bottom: 0px;
+    }
+  }
+}
+
+@keyframes drop-opaque {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity: 0.15;
+    transform: translateY(0px);
+  }
+}

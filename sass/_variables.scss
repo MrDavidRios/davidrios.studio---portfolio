@@ -1,0 +1,14 @@
+$backgroundColor: #0b0b0b;
+$darkBackgroundColor: #000000;
+
+$accentColor: #00b2ff;
+$accentColorFilter: invert(33%) sepia(36%) saturate(2995%) hue-rotate(212deg)
+  brightness(102%) contrast(99%); //CSS Filter Generator: https://codepen.io/sosuke/pen/Pjoqqp
+
+$lightFilter: invert(100%) sepia(64%) saturate(56%) hue-rotate(292deg)
+  brightness(89%) contrast(78%);
+
+$mobileWidth: "900px";
+$shortHeight: "600px";
+
+$animationDuration: 0.35s;
