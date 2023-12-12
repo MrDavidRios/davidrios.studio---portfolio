@@ -1,223 +1,260 @@
 <!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Game Developer/Front-End Developer. Check out Remindr!">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Game Developer/Front-End Developer. Check out Remindr!" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
-    <link rel="manifest" href="img/favicon//site.webmanifest">
-    <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon//site.webmanifest" />
+    <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@100;400&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>David Rios</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <section id="landingPage">
-        <div id="backgroundVideoContainer">
-            <video autoplay muted loop preload="none" id="pivotPongVid">
-                <source src="videos/pivot_pong_background.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <h3 id="logo" onpointerdown="location.href='/index.html'" title="Logo">DR</h3>
-        <div id="navBar">
-            <p><span onpointerdown="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
-                    tabindex="0">Projects</span>
-            </p>
-            <p><span onpointerdown="document.getElementById('aboutPage').scrollIntoView({behavior: 'smooth'})"
-                    tabindex="0">About/Contact</span>
-            </p>
-        </div>
-        <div id="nameSection">
-            <h1>David Rios</h1>
-            <h3 id="typedDescription">
-            </h3>
-            <button onpointerdown="document.querySelector('#projectsPage .project-showcase').scrollIntoView({behavior: 'smooth', block: 'center'})"
-                tabindex="0">See more!</button>
-        </div>
-        <div id="socialMedia">
-            <a href="https://davidrios.itch.io" target="_blank"><img src="icons/gamepad.svg" id="itchioSocial"
-                    class="social-icon" alt="Link to my itch.io page" title="My itch.io page" draggable="false" /></a>
-            <a href="https://github.com/MrDavidRios/" target="_blank"><img src="icons/github.svg" id="githubSocial"
-                    class="social-icon" alt="Link to my GitHub page" title="My GitHub page" draggable="false" /></a>
-            <a href="https://www.linkedin.com/in/david-rios-b5174a1a8/" target="_blank"><img src="icons/linkedin.svg"
-                    id="linkedinSocial" class="social-icon" alt="Link to my LinkedIn page" title="My LinkedIn page"
-                    draggable="false" /></a>
-        </div>
+      <h3 id="logo" onpointerdown="location.href='/index.html'" title="Logo">DR</h3>
+      <div id="navBar">
+        <p>
+          <span
+            onpointerdown="document.getElementById('projectsPage').scrollIntoView({behavior: 'smooth'})"
+            tabindex="0"
+            >Projects</span
+          >
+        </p>
+        <p>
+          <span onpointerdown="document.getElementById('aboutPage').scrollIntoView({behavior: 'smooth'})" tabindex="0"
+            >About/Contact</span
+          >
+        </p>
+      </div>
+      <div id="nameSection">
+        <h1>David Rios</h1>
+        <h3 id="typedDescription"></h3>
+        <button
+          onpointerdown="document.querySelector('#projectsPage .project-showcase').scrollIntoView({behavior: 'smooth', block: 'center'})"
+          tabindex="0"
+        >
+          See more!
+        </button>
+      </div>
+      <div id="socialMedia">
+        <a href="https://davidrios.itch.io" target="_blank"
+          ><img
+            src="icons/gamepad.svg"
+            id="itchioSocial"
+            class="social-icon"
+            alt="Link to my itch.io page"
+            title="My itch.io page"
+            draggable="false"
+        /></a>
+        <a href="https://github.com/MrDavidRios/" target="_blank"
+          ><img
+            src="icons/github.svg"
+            id="githubSocial"
+            class="social-icon"
+            alt="Link to my GitHub page"
+            title="My GitHub page"
+            draggable="false"
+        /></a>
+        <a href="https://www.linkedin.com/in/david-rios-b5174a1a8/" target="_blank"
+          ><img
+            src="icons/linkedin.svg"
+            id="linkedinSocial"
+            class="social-icon"
+            alt="Link to my LinkedIn page"
+            title="My LinkedIn page"
+            draggable="false"
+        /></a>
+      </div>
     </section>
     <section id="projectsPage">
-        <h1 class="section-title">Featured Projects</h1>
-        <div class="project-showcase" direction="right" tabindex="0">
-            <a href="./remindr.html" draggable="false">
-                <img 
-                    class="background-img"
-                    src="./img/remindrsamplescreenshot.png"
-                    alt="Remindr - Demo Image"
-                    draggable="false" />
-                <div class="project-page-arrow">
-                    <span>Visit Project Page</span>
-                    <img src="./img/right-arrow.svg" draggable="false"/>
-                </div>
-                <div class="project-description">
-                    <h2>Remindr</h2>
+      <h1 class="section-title">Featured Projects</h1>
+      <div class="project-showcase" direction="right" tabindex="0">
+        <a href="./remindr.html" draggable="false">
+          <img
+            class="background-img"
+            src="./img/remindrsamplescreenshot.png"
+            alt="Remindr - Demo Image"
+            draggable="false"
+          />
+          <div class="project-page-arrow">
+            <span>Visit Project Page</span>
+            <img src="./img/right-arrow.svg" draggable="false" />
+          </div>
+          <div class="project-description">
+            <h2>Remindr</h2>
 
-                    <p class="project-showcase-platforms">
-                        Windows and Linux <span>(2020 - Present)</span>
-                    </p>
+            <p class="project-showcase-platforms">Windows and Linux <span>(2020 - Present)</span></p>
 
-                    <p class="project-showcase-description">
-                        Remindr is an elegant and simple desktop to-do app with minute-precise reminders.
-                    </p>
+            <p class="project-showcase-description">
+              Remindr is an elegant and simple desktop to-do app with minute-precise reminders.
+            </p>
 
-                    <p class="project-showcase-description desktop">Made with:</p>
-                    <p class="project-showcase-description mobile">Made with Electron & Firebase</p>
-                    <ul class="project-showcase-description-bulletlist">
-                        <li>Electron:
-                            <ul class="sublist">
-                                <li>HTML</li>
-                                <li>JavaScript (TypeScript)</li>
-                                <li>CSS (Sass)</li>
-                                <li>Node.js</li>
-                            </ul>
-                        </li>
-                        <li>Firebase (Auth, Firestore, Storage)</li>
-                    </ul>
-                    <p class="project-showcase-description">Distributed with GitHub CI/CD</p>
-                </div>
-            </a>
-        </div>
-        <div class="project-showcase" direction="right" tabindex="0">
-            <img
-                class="background-img"
-                src="./img/pivotpongsamplescreenshot.png"
-                alt="Pivot Pong - Demo Image"
-                draggable="false" />
-            <a href="http://davidrios.itch.io/pivotpong" target="_blank" draggable="false"> 
-                <div class="project-page-arrow">
-                    <span>Visit Project Page</span>
-                    <img src="./img/right-arrow.svg" draggable="false"></img>
-                </div>
-                <div class="project-description">
-                    <h2>Pivot Pong</h2>
+            <p class="project-showcase-description desktop">Made with:</p>
+            <p class="project-showcase-description mobile">Made with Electron & Firebase</p>
+            <ul class="project-showcase-description-bulletlist">
+              <li>
+                Electron:
+                <ul class="sublist">
+                  <li>HTML</li>
+                  <li>JavaScript (TypeScript)</li>
+                  <li>CSS (Sass)</li>
+                  <li>Node.js</li>
+                </ul>
+              </li>
+              <li>Firebase (Auth, Firestore, Storage)</li>
+            </ul>
+            <p class="project-showcase-description">Distributed with GitHub CI/CD</p>
+          </div>
+        </a>
+      </div>
+      <div class="project-showcase" direction="right" tabindex="0">
+        <img
+          class="background-img"
+          src="./img/pivotpongsamplescreenshot.png"
+          alt="Pivot Pong - Demo Image"
+          draggable="false"
+        />
+        <a href="http://davidrios.itch.io/pivotpong" target="_blank" draggable="false">
+          <div class="project-page-arrow">
+            <span>Visit Project Page</span>
+            <img src="./img/right-arrow.svg" draggable="false" />
+          </div>
+          <div class="project-description">
+            <h2>Pivot Pong</h2>
 
-                    <p class="project-showcase-platforms">
-                        Windows <span>(2019 - 2021)</span>
-                    </p>
+            <p class="project-showcase-platforms">Windows <span>(2019 - 2021)</span></p>
 
-                    <p class="project-showcase-description">
-                        Pivot Pong is a ping pong game that puts a fresh spin on a classic. In Pivot Pong, you can
-                        to control the ball's trajectory by rotating your paddle, making your next move unpredictable!
-                    </p>
+            <p class="project-showcase-description">
+              Pivot Pong is a ping pong game that puts a fresh spin on a classic. In Pivot Pong, you can to control the
+              ball's trajectory by rotating your paddle, making your next move unpredictable!
+            </p>
 
-                    <p class="project-showcase-description">Made with Unity & Photon (Multiplayer capabilities)</p>
-                </div>
-            </a>
-        </div>
-        <div class="project-showcase" direction="right" tabindex="0">
-            <img
-                class="background-img bright"
-                src="./img/villagebuildersamplescreenshot.png" alt="Village Builder - Demo Image"
-                draggable="false" />
-            <a href="http://davidrios.itch.io/village-builder-demo" target="_blank" draggable="false">                
-                <div class="project-page-arrow">
-                    <span>Visit Project Page</span>
-                    <img src="./img/right-arrow.svg" draggable="false"/>
-                </div>
-                <div class="project-description">
-                    <h2>Village Builder</h2>
+            <p class="project-showcase-description">Made with Unity & Photon (Multiplayer capabilities)</p>
+          </div>
+        </a>
+      </div>
+      <div class="project-showcase" direction="right" tabindex="0">
+        <img
+          class="background-img bright"
+          src="./img/villagebuildersamplescreenshot.png"
+          alt="Village Builder - Demo Image"
+          draggable="false"
+        />
+        <a href="http://davidrios.itch.io/village-builder-demo" target="_blank" draggable="false">
+          <div class="project-page-arrow">
+            <span>Visit Project Page</span>
+            <img src="./img/right-arrow.svg" draggable="false" />
+          </div>
+          <div class="project-description">
+            <h2>Village Builder</h2>
 
-                    <p class="project-showcase-platforms">
-                        Windows <span>(2018 - 2020)</span>
-                    </p>
+            <p class="project-showcase-platforms">Windows <span>(2018 - 2020)</span></p>
 
-                    <p class="project-showcase-description">A simulation game where you can plan and develop your own
-                        village by interacting with its citizens. </p>
+            <p class="project-showcase-description">
+              A simulation game where you can plan and develop your own village by interacting with its citizens.
+            </p>
 
-                    <p class="project-showcase-description">
-                        Through this project, I learned to depend on event-based, asychronous programming, which helped
-                        maintain code organization as the project scaled in complexity.
-                    </p>
+            <p class="project-showcase-description">
+              Through this project, I learned to depend on event-based, asychronous programming, which helped maintain
+              code organization as the project scaled in complexity.
+            </p>
 
-                    <br class="desktop">
-                    <ul class="project-showcase-description-bulletlist">
-                        <li>Concepts/Algorithms Learned:
-                            <ul class="sublist">
-                                <li>A* Pathfinding (Citizen Pathfinding)</li>
-                                <li>Perlin Noise (Terrain Generation)</li>
-                            </ul>
-                        </li>
-                    </ul>
+            <br class="desktop" />
+            <ul class="project-showcase-description-bulletlist">
+              <li>
+                Concepts/Algorithms Learned:
+                <ul class="sublist">
+                  <li>A* Pathfinding (Citizen Pathfinding)</li>
+                  <li>Perlin Noise (Terrain Generation)</li>
+                </ul>
+              </li>
+            </ul>
 
-                    <p class="project-showcase-description">Made with Unity & Blender</p>
-                </div>
-            </a>
-        </div>
-
+            <p class="project-showcase-description">Made with Unity & Blender</p>
+          </div>
+        </a>
+      </div>
     </section>
     <section id="aboutPage">
-        <h1 class="section-title">About Me</h1>
-        <div id="about">
-            <p>
-                I’m <span class="accent">David Rios</span>, a junior pursuing a B.S. in Computer Science at Columbia
-                University.
-            </p>
-            <br>
-            <p>
-                I enjoy stumbling upon new technologies and finding ways they can be used to create cool things.
-            </p>
-            <br>
-            <p>
-                Throughout middle and high school, I created various web apps and small games as my interest fluctuated
-                between web and game development. I took a particular interest in web development coming out of high
-                school because of its accessibility; I could make something once and package it on a website, desktop app, or mobile app.
-            </p>
-            <br>
-            <p>
-                Since then, I have been developing more comprehensive <span class="accent">Electron Apps</span>, <span
-                    class="accent">Chrome
-                    Extensions</span>, and <span class="accent">Web Apps</span>,
-                learning how to create useful, minimalistic UI and clean code in the process.
-            </p>
+      <h1 class="section-title">About Me</h1>
+      <div id="about">
+        <p>
+          I’m <span class="accent">David Rios</span>, a junior pursuing a B.S. in Computer Science at Columbia
+          University.
+        </p>
+        <br />
+        <p>I enjoy stumbling upon new technologies and finding ways they can be used to create cool things.</p>
+        <br />
+        <p>
+          Throughout middle and high school, I created various web apps and small games as my interest fluctuated
+          between web and game development. I took a particular interest in web development coming out of high school
+          because of its accessibility; I could make something once and package it on a website, desktop app, or mobile
+          app.
+        </p>
+        <br />
+        <p>
+          Since then, I have been developing more comprehensive <span class="accent">Electron Apps</span>,
+          <span class="accent">Chrome Extensions</span>, and <span class="accent">Web Apps</span>, learning how to
+          create useful, minimalistic UI and clean code in the process.
+        </p>
+      </div>
+      <div></div>
+      <footer>
+        <div id="socialMedia">
+          <a href="https://davidrios.itch.io" target="_blank"
+            ><img
+              src="icons/gamepad.svg"
+              id="itchioSocial"
+              class="social-icon"
+              alt="My itch.io page"
+              title="My itch.io page"
+              draggable="false"
+              tabindex="0"
+          /></a>
+          <a href="https://github.com/MrDavidRios/" target="_blank"
+            ><img
+              src="icons/github.svg"
+              id="githubSocial"
+              class="social-icon"
+              alt="My GitHub page"
+              title="My GitHub page"
+              draggable="false"
+              tabindex="0"
+          /></a>
+          <a href="https://www.linkedin.com/in/drios03/" target="_blank"
+            ><img
+              src="icons/linkedin.svg"
+              id="linkedinSocial"
+              class="social-icon"
+              alt="My LinkedIn page"
+              title="My LinkedIn page"
+              draggable="false"
+              tabindex="0"
+          /></a>
         </div>
-        <div>
-        </div>
-        <footer>
-            <div id="socialMedia">
-                <a href="https://davidrios.itch.io" target="_blank"><img src="icons/gamepad.svg" id="itchioSocial"
-                        class="social-icon" alt="My itch.io page" title="My itch.io page" draggable="false"
-                        tabindex="0" /></a>
-                <a href="https://github.com/MrDavidRios/" target="_blank"><img src="icons/github.svg" id="githubSocial"
-                        class="social-icon" alt="My GitHub page" title="My GitHub page" draggable="false"
-                        tabindex="0" /></a>
-                <a href="https://www.linkedin.com/in/drios03/" target="_blank"><img src="icons/linkedin.svg"
-                        id="linkedinSocial" class="social-icon" alt="My LinkedIn page" title="My LinkedIn page"
-                        draggable="false" tabindex="0" /></a>
-            </div>
-            <div id="email">
-                <a href="mailto:mr.daverios@gmail.com" target="_blank"><img src="icons/email.svg" id="emailIcon"
-                        class="social-icon" alt="Email" draggable="false" tabindex="0" /></a>
-                <p>mr.daverios@gmail.com</p>
-            </div>
-            <p id="nameAndYear">David Rios — 2023</p>
-        </footer>
+        <p>d.rios <span class="accent">[ at ]</span> columbia.edu</p>
+        <p id="nameAndYear">David Rios — 2023</p>
+      </footer>
     </section>
-</body>
+  </body>
 
-<script src="./set-img-as-background.js"></script>
-<script src="./scrollanimations.js"></script>
-
+  <script src="./set-img-as-background.js"></script>
+  <script src="./scrollanimations.js"></script>
 </html>
