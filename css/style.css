@@ -83,7 +83,7 @@ body {
   height: 100vh;
   min-height: 500px;
   position: relative;
-  background-color: #0b0b0b;
+  background-color: rgb(11, 11, 11);
 }
 
 #backgroundVideoContainer {
@@ -193,7 +193,7 @@ body {
 
 #projectsPage {
   padding-bottom: 100px;
-  background-color: #0b0b0b;
+  background-color: rgb(11, 11, 11);
 }
 #projectsPage h1 {
   text-align: center;
@@ -280,7 +280,7 @@ body {
 #aboutPage {
   height: 75vh;
   min-height: 750px;
-  background-color: #0b0b0b;
+  background-color: rgb(11, 11, 11);
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   text-align: center;
@@ -1116,7 +1116,6 @@ body {
   #promo #releasesMobileButton {
     display: inline !important;
   }
-
   #promoImg {
     position: absolute;
     height: 100%;
@@ -1125,21 +1124,17 @@ body {
     opacity: 0.15;
     animation: drop-opaque 1.5s !important;
   }
-
   #githubSocial {
     margin: 0 !important;
     position: absolute;
   }
-
   .social-link-container {
     width: 32px;
   }
-
   .bottom-left {
     left: 50%;
     transform: translateX(-50%);
   }
-
   #landingPage {
     display: flex;
     justify-content: center;
@@ -1161,7 +1156,6 @@ body {
     margin-top: auto;
     margin-bottom: 25px;
   }
-
   #projectsPage {
     padding: 0 25px 50px 25px;
   }
@@ -1181,13 +1175,11 @@ body {
   #projectsPage .project-showcase .project-description .project-showcase-description-bulletlist {
     display: none;
   }
-
   .section-title {
     padding: 25px 0 0 0 !important;
     margin: 0 !important;
     text-align: center;
   }
-
   #aboutPage {
     height: 100vh;
   }
@@ -1198,11 +1190,9 @@ body {
   #aboutPage #nameAndYear {
     padding-bottom: 10px;
   }
-
   .desktop {
     display: none;
   }
-
   .mobile {
     display: block !important;
   }
@@ -1218,7 +1208,6 @@ body {
     top: 20px;
     left: calc(100% - 35px);
   }
-
   #landingPage #socialMedia {
     position: initial;
     margin-top: auto;
@@ -1325,7 +1314,7 @@ body {
 
 #promoImg {
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-  margin: 0px calc(5%) 15px 0px;
+  margin: 0px 5% 15px 0px;
   justify-self: end;
   align-self: center;
   height: 90vh;
@@ -1376,11 +1365,11 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5c5c5c;
+  background: rgb(92, 92, 92);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #7e7e7e;
+  background: rgb(126, 126, 126);
 }
 
 /*# sourceMappingURL=style.css.map */
