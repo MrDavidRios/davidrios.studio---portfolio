@@ -2,7 +2,7 @@ let latestVersion = "1.4.6";
 
 const downloadButton = document.getElementById("downloadButton");
 
-let link = "https://github.com/MrDavidRios/remindr_releases/releases";
+let link = "https://github.com/MrDavidRios/remindr/releases";
 
 getLatestVersion().finally(initDownloadButton);
 
@@ -13,17 +13,17 @@ function initDownloadButton() {
 
   switch (os) {
     case "Windows":
-      link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-Setup-${latestVersion}.exe`;
+      link = `https://github.com/MrDavidRios/remindr/releases/download/v${latestVersion}/Remindr-Setup-${latestVersion}.exe`;
 
       downloadButton.innerText = `Download for Windows (v${latestVersion})`;
       break;
     case "Linux":
-      link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr_${latestVersion}_amd64.deb`;
+      link = `https://github.com/MrDavidRios/remindr/releases/download/v${latestVersion}/Remindr_${latestVersion}_amd64.deb`;
 
       downloadButton.innerText = `Download for Linux (Debian) (v${latestVersion})`;
       break;
     case "Mac OS":
-      link = `https://github.com/MrDavidRios/remindr_releases/releases/download/v${latestVersion}/Remindr-${latestVersion}.pkg`;
+      link = `https://github.com/MrDavidRios/remindr/releases/download/v${latestVersion}/Remindr-${latestVersion}.pkg`;
 
       downloadButton.innerText = "Not currently available on Mac OS";
       // downloadButton.innerText = `Download for Mac OS (v${latestVersion})`;
@@ -40,7 +40,7 @@ downloadButton?.addEventListener("click", () => {
 });
 
 document.getElementById("releasesMobileButton")?.addEventListener("click", () => {
-  window.open("https://github.com/MrDavidRios/remindr_releases/releases", "_blank");
+  window.open("https://github.com/MrDavidRios/remindr/releases", "_blank");
 });
 
 function getOS() {
@@ -67,7 +67,7 @@ function getOS() {
 }
 
 async function getLatestVersion() {
-  let url = "https://api.github.com/repos/mrdavidrios/remindr_releases/tags";
+  let url = "https://api.github.com/repos/mrdavidrios/remindr/tags";
   let obj = null;
 
   try {
