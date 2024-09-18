@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/style.scss css/style.css --watch"
+    "watch:sass": "sass sass/style.scss css/style.css --watch"
   },
   "author": "David Rios",
   "license": "ISC",

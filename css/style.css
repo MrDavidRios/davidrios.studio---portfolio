@@ -76,6 +76,7 @@ button:hover {
 }
 
 body {
+  background-color: rgb(11, 11, 11);
   overflow-x: hidden;
 }
 
@@ -83,7 +84,6 @@ body {
   height: 100vh;
   min-height: 500px;
   position: relative;
-  background-color: rgb(11, 11, 11);
 }
 
 #backgroundVideoContainer {
@@ -193,7 +193,7 @@ body {
 
 #projectsPage {
   padding-bottom: 100px;
-  background-color: rgb(11, 11, 11);
+  background-color: #181818;
 }
 #projectsPage h1 {
   text-align: center;
@@ -280,7 +280,6 @@ body {
 #aboutPage {
   height: 75vh;
   min-height: 750px;
-  background-color: rgb(11, 11, 11);
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   text-align: center;
@@ -1103,6 +1102,8 @@ body {
 @media only screen and (max-width: 900px) {
   #promo {
     grid-template-columns: 100% !important;
+    position: relative;
+    overflow: hidden;
   }
   #promo #promoHeaderWrapper {
     text-align: center;
@@ -1116,13 +1117,16 @@ body {
   #promo #releasesMobileButton {
     display: inline !important;
   }
-  #promoImg {
+  div#promoImg {
     position: absolute;
     height: 100%;
-    width: 100%;
+    bottom: 0;
+    top: 0;
     z-index: -1;
+    filter: blur(2px);
+    margin: 0;
     opacity: 0.15;
-    animation: drop-opaque 1.5s !important;
+    animation: drop-opaque 1.5s;
   }
   #githubSocial {
     margin: 0 !important;
@@ -1326,6 +1330,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 0 0;
 }
 
 #githubSocial {

@@ -1,154 +1,154 @@
-@use '../variables' as *;
+@use "../variables" as *;
 
 body {
-	overflow-x: hidden;
+  background-color: rgb(11, 11, 11);
+
+  overflow-x: hidden;
 }
 
 #landingPage {
-	height: 100vh;
-	min-height: 500px;
+  height: 100vh;
+  min-height: 500px;
 
-	position: relative;
-
-	background-color: rgb(11, 11, 11);
+  position: relative;
 }
 
 #backgroundVideoContainer {
-	width: 100vw;
-	overflow: hidden;
-	position: absolute;
-	height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
 
-	filter: opacity(0.1);
+  filter: opacity(0.1);
 
-	#pivotPongVid {
-		position: absolute;
-		top: 0;
+  #pivotPongVid {
+    position: absolute;
+    top: 0;
 
-		width: 100vw;
-	}
+    width: 100vw;
+  }
 }
 
 #nameSection {
-	text-align: left;
-	margin-left: 15%;
+  text-align: left;
+  margin-left: 15%;
 
-	position: absolute;
-	top: 30%;
+  position: absolute;
+  top: 30%;
 
-	display: grid;
-	grid-template-rows: auto auto auto;
+  display: grid;
+  grid-template-rows: auto auto auto;
 
-	h1 {
-		margin-left: -4px;
+  h1 {
+    margin-left: -4px;
 
-		font-size: 60px;
+    font-size: 60px;
 
-		font-family: 'Reem Kufi', sans-serif !important;
-	}
+    font-family: "Reem Kufi", sans-serif !important;
+  }
 
-	h3 {
-		padding-bottom: 15px;
-	}
+  h3 {
+    padding-bottom: 15px;
+  }
 
-	span {
-		padding: 0 2px;
-	}
+  span {
+    padding: 0 2px;
+  }
 
-	button {
-		width: 175px;
-		height: 40px;
+  button {
+    width: 175px;
+    height: 40px;
 
-		margin: 4px, 0, 0, 4px;
-		margin-top: 20px;
+    margin: 4px, 0, 0, 4px;
+    margin-top: 20px;
 
-		background-color: $accentColor;
+    background-color: $accentColor;
 
-		font-family: 'Raleway', sans-serif;
-		font-size: 17px;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
 
-		transition: 1s all;
+    transition: 1s all;
 
-		box-shadow: 0 0 0 #000;
-		transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 0 #000;
+    transform: translate3d(0, 0, 0);
 
-		&:hover {
-			background-color: #0081b8 !important;
-		}
-	}
+    &:hover {
+      background-color: #0081b8 !important;
+    }
+  }
 }
 
 #navBar {
-	display: grid;
-	grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
 
-	text-align: center;
+  text-align: center;
 
-	position: absolute;
-	top: 25px;
-	right: 40px;
+  position: absolute;
+  top: 25px;
+  right: 40px;
 
-	column-gap: 20px;
+  column-gap: 20px;
 
-	width: 175px;
+  width: 175px;
 
-	p {
-		cursor: pointer;
+  p {
+    cursor: pointer;
 
-		transition: 0.3s color ease-in-out, 0.5s transform;
+    transition: 0.3s color ease-in-out, 0.5s transform;
 
-		&:hover {
-			color: #0081b8 !important;
+    &:hover {
+      color: #0081b8 !important;
 
-			transform: translate(0px, -2px);
-		}
-	}
+      transform: translate(0px, -2px);
+    }
+  }
 }
 
 #socialMedia {
-	position: absolute;
-	right: 25px;
-	bottom: 25px;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
 
-	width: min-content;
+  width: min-content;
 
-	display: grid;
-	grid-template-columns: auto auto auto;
-	column-gap: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 25px;
 
-	#githubSocial {
-		margin-left: 0;
-	}
+  #githubSocial {
+    margin-left: 0;
+  }
 
-	a {
-		width: 32px;
+  a {
+    width: 32px;
 
-		text-align: left;
-	}
+    text-align: left;
+  }
 }
 
 .social-icon {
-	width: 32px;
-	height: 32px;
+  width: 32px;
+  height: 32px;
 
-	filter: invert(99%) sepia(0%) saturate(1136%) hue-rotate(222deg) brightness(90%) contrast(91%);
+  filter: invert(99%) sepia(0%) saturate(1136%) hue-rotate(222deg) brightness(90%) contrast(91%);
 
-	transition: 0.5s;
+  transition: 0.5s;
 
-	&:hover {
-		filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
-		transform: translateY(-3px);
-	}
+  &:hover {
+    filter: invert(39%) sepia(86%) saturate(486%) hue-rotate(174deg) brightness(92%) contrast(78%);
+    transform: translateY(-3px);
+  }
 }
 
 .project-showcase {
-	min-height: 400px;
+  min-height: 400px;
 
-	.project-showcase-description-bulletlist {
-		margin-left: 20px;
+  .project-showcase-description-bulletlist {
+    margin-left: 20px;
 
-		.sublist {
-			margin-left: 20px;
-		}
-	}
+    .sublist {
+      margin-left: 20px;
+    }
+  }
 }

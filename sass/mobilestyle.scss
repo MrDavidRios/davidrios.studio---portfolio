@@ -4,6 +4,8 @@
 @media only screen and (max-width: $mobileWidth) {
   #promo {
     grid-template-columns: 100% !important;
+    position: relative;
+    overflow: hidden;
 
     #promoHeaderWrapper {
       text-align: center;
@@ -22,17 +24,20 @@
     }
   }
 
-  #promoImg {
+  div#promoImg {
     position: absolute;
-
     height: 100%;
-    width: 100%;
+    bottom: 0;
+    top: 0;
 
     z-index: -1;
+    filter: blur(2px);
+
+    margin: 0;
 
     opacity: 0.15;
 
-    animation: drop-opaque 1.5s !important;
+    animation: drop-opaque 1.5s;
   }
 
   #githubSocial {
